@@ -1,0 +1,26 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path opacity=".2" d="M31 5H17C9.82 5 4 10.82 4 18v16c0 7.18 5.82 13 13 13h14c7.18 0 13-5.82 13-13V18c0-7.18-5.82-13-13-13Z" fill="#000"/>
+  <path d="M30.667 2H17.333C9.97 2 4 7.82 4 15v15c0 7.18 5.97 13 13.333 13h13.334C38.03 43 44 37.18 44 30V15c0-7.18-5.97-13-13.333-13Z" fill="url(#a)"/>
+  <mask id="c" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="2" width="40" height="41">
+    <path d="M17.333 2.5h13.334C37.767 2.5 43.5 8.108 43.5 15v15c0 6.892-5.734 12.5-12.833 12.5H17.333C10.233 42.5 4.5 36.892 4.5 30V15c0-6.892 5.734-12.5 12.833-12.5Z" fill="url(#b)" stroke="#065066"/>
+  </mask>
+  <g mask="url(#c)" fill-rule="evenodd" clip-rule="evenodd">
+    <path opacity=".4" d="M13 21h22c5.523 0 10-4.477 10-10V1H3v10c0 5.523 4.477 10 10 10Z" fill="#C6F5FF"/>
+    <path d="M31 42c6.627 0 12-5.373 12-12v-2l-.004.288C42.843 34.23 37.98 39 32 39H16C9.925 39 5 34.075 5 28v2c0 6.627 5.373 12 12 12h14Z" fill="#066D9D"/>
+  </g>
+  <path d="m13.53 4.689-1.841.781a1 1 0 1 0 .781 1.841l1.841-.781a1 1 0 1 0-.781-1.841Z" fill="#fff"/>
+  <rect x="4.5" y="2.5" width="39" height="40" rx="12.5" stroke="#065066"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="m28.768 8.5.618 4.38 5.447.001c.737 0 1.403.298 1.886.781.439.439.725 1.03.774 1.687l.007.199v14.285c0 .737-.298 1.403-.781 1.886a2.658 2.658 0 0 1-1.687.774l-.199.007H13.167a2.659 2.659 0 0 1-1.886-.781 2.658 2.658 0 0 1-.774-1.687l-.007-.199V15.548c0-.737.299-1.403.781-1.886a2.658 2.658 0 0 1 1.687-.774l.199-.007h5.446l.62-4.381h9.535ZM24 15.524c-1.656 0-3.155.679-4.24 1.776A6.088 6.088 0 0 0 18 21.595c0 1.677.672 3.196 1.76 4.295a5.946 5.946 0 0 0 8.48 0A6.088 6.088 0 0 0 30 21.595a6.088 6.088 0 0 0-1.76-4.295A5.946 5.946 0 0 0 24 15.524Z" fill="#fff" stroke="#065066" stroke-linejoin="round"/>
+  <path d="M24 18a3.83 3.83 0 0 0-2.586 1" stroke="#fff" stroke-width="2"/>
+  <path d="M34 15h-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2Z" fill="#065066"/>
+  <defs>
+    <linearGradient id="a" x1="24" y1="2" x2="24" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3ACAE8"/>
+      <stop offset="1" stop-color="#1B9ACD"/>
+    </linearGradient>
+    <linearGradient id="b" x1="24" y1="2" x2="24" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3ACAE8"/>
+      <stop offset="1" stop-color="#1B9ACD"/>
+    </linearGradient>
+  </defs>
+</svg>

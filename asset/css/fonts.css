@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/**
+ * Selpub - Fonts v1.2 : 2023-08-22
+*/
+/* ------------------------------------------------------------------------------------------------------------- */
+/* noto-sans-kr-300 - latin_korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans KR'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-300.woff2') format('woff2'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-300.woff') format('woff'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-300.otf') format('opentype');
+}
+
+/* noto-sans-kr-regular - latin_korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-regular.woff2') format('woff2'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-regular.woff') format('woff'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-regular.otf') format('opentype');
+}
+
+/* noto-sans-kr-500 - latin_korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-500.woff2') format('woff2'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-500.woff') format('woff'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-500.otf') format('opentype');
+}
+
+/* noto-sans-kr-700 - latin_korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-700.woff2') format('woff2'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-700.woff') format('woff'),
+    url('../fonts/noto-sans-kr-v21-latin_korean-700.otf') format('opentype');
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* NanumGothic */
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumGothic Regular'), local('NanumGothic-Regular'),
+    url('../theme/fonts/Nanum/NanumGothicR.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumGothicR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumGothic Bold'), local('NanumGothic-Bold'),
+    url('../theme/fonts/Nanum/NanumGothicB.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumGothicB.woff') format('woff');
+}
+
+/* NanumMyeongjo */
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumMyeongjo Regular'), local('NanumMyeongjo-Regular'),
+    url('../theme/fonts/Nanum/NanumMyeongjoR.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumMyeongjoR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumMyeongjo Bold'), local('NanumMyeongjo-Bold'),
+    url('../theme/fonts/Nanum/NanumMyeongjoB.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumMyeongjoB.woff') format('woff');
+}
+
+/* NanumSquare */
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumSquare Regular'), local('NanumSquare-Regular'),
+    url('../theme/fonts/Nanum/NanumSquareR.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumSquareR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumSquare Bold'), local('NanumSquare-Bold'),
+    url('../theme/fonts/Nanum/NanumSquareB.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumSquareB.woff') format('woff');
+}
+
+/* NanumSquareRound */
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumSquareRound Regular'), local('NanumSquareRound-Regular'),
+    url('../theme/fonts/Nanum/NanumSquareRoundR.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumSquareRoundR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumSquareRound Bold'), local('NanumSquareRound-Bold'),
+    url('../theme/fonts/Nanum/NanumSquareRoundB.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumSquareRoundB.woff') format('woff');
+}
+
+/* NanumPen */
+@font-face {
+  font-family: 'NanumPen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumPen Regular'), local('NanumPen-Regular'),
+    url('../theme/fonts/Nanum/NanumPenR.woff2') format('woff2'), 
+    url('../theme/fonts/Nanum/NanumPenR.woff') format('woff');
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Baemin - JuA */
+@font-face {
+  font-family: 'JuA';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JuA Regular'), local('JuA-Regular'),
+    url('../theme/fonts/Baemin/JuAR.woff2') format('woff2'), 
+    url('../theme/fonts/Baemin/JuAR.woff') format('woff');
+}
+
+/* Baemin - DoHyeon */
+@font-face {
+  font-family: 'DoHyeon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DoHyeon Regular'), local('DoHyeon-Regular'),
+    url('../theme/fonts/Baemin/DoHyeonR.woff2') format('woff2'), 
+    url('../theme/fonts/Baemin/DoHyeonR.woff') format('woff');
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Binggrae */
+@font-face {
+  font-family: 'Binggrae';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Binggrae Regular'), local('Binggrae-Regular'),
+    url('../theme/fonts/Binggrae/BinggraeR.woff2') format('woff2'),
+    url('../theme/fonts/Binggrae/BinggraeR.woff') format('woff');
+} 
+
+@font-face {
+  font-family: 'Binggrae';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Binggrae Bold'), local('Binggrae-Bold'),
+    url('../theme/fonts/Binggrae/BinggraeB.woff2') format('woff2'),
+    url('../theme/fonts/Binggrae/BinggraeB.woff') format('woff');
+} 
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* KoPub */
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KoPubDotum Medium'), local('KoPubDotum-Medium'),
+    url('../theme/fonts/KoPub/KoPubDotumM.woff') format('woff2'),
+    url('../theme/fonts/KoPub/KoPubDotumM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('KoPubDotum Bold'), local('KoPubDotum-Bold'),
+    url('../theme/fonts/KoPub/KoPubDotumB.woff') format('woff2'),
+    url('../theme/fonts/KoPub/KoPubDotumB.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KoPubBatang Medium'), local('KoPubBatang-Medium'),
+    url('../theme/fonts/KoPub/KoPubBatangM.woff') format('woff2'),
+    url('../theme/fonts/KoPub/KoPubBatangM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 700;
+  src: local('KoPubBatang Bold'), local('KoPubBatang-Bold'),
+    url('../theme/fonts/KoPub/KoPubBatangB.woff') format('woff2'),
+    url('../theme/fonts/KoPub/KoPubBatangB.woff') format('woff');
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* GmarketSans */
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+    url('../theme/fonts/GmarketSans/GmarketSansM.woff2') format('woff2'),
+    url('../theme/fonts/GmarketSans/GmarketSansM.woff') format('woff');
+} 
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+    url('../theme/fonts/GmarketSans/GmarketSansB.woff2') format('woff2'),
+    url('../theme/fonts/GmarketSans/GmarketSansB.woff') format('woff');
+} 
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Godo */
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Godo Medium'), local('Godo-Medium'),
+    url('../theme/fonts/Godo/GodoM.woff2') format('woff2'), 
+    url('../theme/fonts/Godo/GodoM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Godo Bold'), local('Godo-Bold'),
+    url('../theme/fonts/Godo/GodoB.woff2') format('woff2'), 
+    url('../theme/fonts/Godo/GodoB.woff') format('woff');
+}

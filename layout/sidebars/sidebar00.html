@@ -1,0 +1,106 @@
+
+            <div class="title">
+              <h2>슬라이드</h2>
+
+              <div class="btn_wrap">
+                <button type="button" class="btn properties_close" aria-label="속성 닫기">
+                  <svg class="svg_properties_close" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#979797" stroke-width="2"></path>
+                    <path d="M9 1L15 7L9 13" stroke="#979797" stroke-width="2"></path>
+                  </svg>
+                  <span class="blind">속성 닫기</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="inner scroll_box">
+              <!-- 슬라이드 설정 -->
+              <div class="panel always_view">
+                <div class="panel_title">
+                  <h3>슬라이드 설정</h3>
+                  <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                    <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                  </span>
+                </div>
+
+                <div class="panel_setting">
+                  <!-- // 파일명 -->
+                  <div class="panel_subtree dividing">
+                    <div class="row">
+                      <span class="word scw90">파일명</span>
+                    </div>
+                    <div class="row">
+                      <div class="input_box mw226">
+                        <input type="text" class="scw90 input_t" placeholder="파일명을 입력하세요.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel_subtree dividing">
+                    <div class="row">
+                      <span class="word scw90">콘텐츠 명</span>
+                    </div>
+                    <div class="row">
+                      <div class="input_box mw226">
+                        <input type="text" class="scw90 input_t" placeholder="콘텐츠 명을 입력하세요.">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- // 슬라이드 크기 -->
+                  <div class="panel_subtree dividing">
+                    <div class="row mt5">
+                      <span class="word scw90">슬라이드 크기</span>
+                    </div>
+                    <div class="row row_screentype">
+                      <div class="radio_wrap">
+                        <label class="radio_label">
+                          <input type="radio" name="subtree_screentype" class="blind" checked>
+                          <span class="rlabel"><em><i class="i_screentype_a"></i></em>와이드 스크린(16:9)</span>
+                        </label>
+                      </div>
+                      <div class="radio_wrap">
+                        <label class="radio_label">
+                          <input type="radio" name="subtree_screentype" class="blind">
+                          <span class="rlabel"><em><i class="i_screentype_b"></i></em>표준 크기(4:3)</span>
+                        </label>
+                      </div>
+                      <div class="radio_wrap">
+                        <label class="radio_label">
+                          <input type="radio" name="subtree_screentype" class="blind">
+                          <span class="rlabel"><em><i class="i_screentype_c"></i></em>eBook 크기</span>
+                        </label>
+                      </div>
+                      <div class="radio_wrap">
+                        <label class="radio_label">
+                          <input type="radio" name="subtree_screentype" class="blind">
+                          <span class="rlabel"><em><i class="i_screentype_d"></i></em>A4 용지</span>
+                        </label>
+                      </div>
+                    </div>                                                            
+                  </div>
+
+                  <!-- // 슬라이드 추가/삭제 -->
+                  <div class="panel_subtree dividing">
+                    <div class="row mt5">
+                      <button type="button" class="btn b_t line" aria-label="슬라이드 추가하기">
+                        <span>슬라이드 추가하기</span>
+                      </button>
+                    </div>
+                    <div class="row">
+                      <button type="button" class="btn b_t line is--disabled" aria-label="슬라이드 삭제하기">
+                        <span>슬라이드 삭제하기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              $(".panel_setting_open").on("click", function(e){
+                var target = e.currentTarget.closest(".panel");
+                $(target).toggleClass("active");
+              });
+              $(".select_toggle").on("click", function(e){
+                var target = e.currentTarget;
+              });
+            </script>

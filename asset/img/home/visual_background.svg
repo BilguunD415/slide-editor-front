@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1920 280" style="enable-background:new 0 0 1920 280;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#mask0_0_87_00000140012329291045342270000014216603934523958929_);}
+	.st2{opacity:0.2;}
+	.st3{fill:none;stroke:#979797;}
+	.st4{opacity:0.2;fill:#D8D8D8;enable-background:new    ;}
+	.st5{fill:#D8D8D8;stroke:#979797;}
+</style>
+<rect y="0" width="1920" height="280"/>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="1920" height="280">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="280" id="mask0_0_87_00000140012329291045342270000014216603934523958929_">
+	<rect y="0" class="st0" width="1920" height="280"/>
+</mask>
+<g class="st1">
+	<g class="st2">
+		<path class="st3" d="M64.5,0v280"/>
+		<path class="st3" d="M120.5,0v280"/>
+		<path class="st3" d="M176.5,0v280"/>
+		<path class="st3" d="M232.5,0v280"/>
+		<path class="st3" d="M288.5,0v280"/>
+		<path class="st3" d="M344.5,0v280"/>
+		<path class="st3" d="M400.5,0v280"/>
+		<path class="st3" d="M456.5,0v280"/>
+		<path class="st3" d="M512.5,0v280"/>
+		<path class="st3" d="M568.5,0v280"/>
+		<path class="st3" d="M624.5,0v280"/>
+		<path class="st3" d="M680.5,0v280"/>
+		<path class="st3" d="M736.5,0v280"/>
+		<path class="st3" d="M792.5,0v280"/>
+		<path class="st3" d="M848.5,0v280"/>
+		<path class="st3" d="M904.5,0v280"/>
+		<path class="st3" d="M960.5,0v280"/>
+		<path class="st3" d="M1016.5,0v280"/>
+		<path class="st3" d="M1072.5,0v280"/>
+		<path class="st3" d="M1128.5,0v280"/>
+		<path class="st3" d="M1184.5,0v280"/>
+		<path class="st3" d="M1240.5,0v280"/>
+		<path class="st3" d="M1296.5,0v280"/>
+		<path class="st3" d="M1352.5,0v280"/>
+		<path class="st3" d="M1408.5,0v280"/>
+		<path class="st3" d="M1464.5,0v280"/>
+		<path class="st3" d="M1520.5,0v280"/>
+		<path class="st3" d="M1576.5,0v280"/>
+		<path class="st3" d="M1632.5,0v280"/>
+		<path class="st3" d="M1688.5,0v280"/>
+		<path class="st3" d="M1744.5,0v280"/>
+		<path class="st3" d="M1800.5,0v280"/>
+		<path class="st3" d="M1856.5,0v280"/>
+	</g>
+	<g class="st2">
+		<path class="st3" d="M0,56h1920"/>
+		<path class="st3" d="M0,112h1920"/>
+		<path class="st3" d="M0,168h1920"/>
+		<path class="st3" d="M0,224h1920"/>
+	</g>
+</g>
+<rect x="457.5" y="111.5" class="st3" width="55" height="55"/>
+<rect x="1689.5" y="111.5" class="st3" width="55" height="55"/>
+<rect x="288" y="167" class="st4" width="56" height="56"/>
+<rect x="64" y="56" class="st4" width="27" height="27"/>
+<rect x="1353" y="140" class="st4" width="27" height="27"/>
+<rect x="1466" y="55" class="st4" width="56" height="56"/>
+<rect x="452.5" y="107.5" class="st5" width="9" height="9"/>
+<rect x="1684.5" y="106.5" class="st5" width="9" height="9"/>
+<rect x="508.5" y="162.5" class="st5" width="9" height="9"/>
+<rect x="1740.5" y="162.5" class="st5" width="9" height="9"/>
+</svg>

@@ -1,0 +1,307 @@
+    <ul class="toolbar">
+      <li class="items">
+        <div class="dropdown_wrap">
+          <button type="button" class="btn dropdown_toggle" aria-label="메뉴 열기">
+            <svg class="svg_nav" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8.5h10v1H4zM4 12h10v1H4zM4 5h10v1H4z" fill="#D8D8D8"></path>
+            </svg>
+            <span class="blind">메뉴 열기</span>
+          </button>
+
+          <div class="dropdown_menu">
+            <ul class="dropdown_list skey_r">
+              <li>
+                <button type="button" class="btn nav_tool new" aria-label="새로 만들기">
+                  <span>새로 만들기</span>
+                  <span class="skey">Ctrl+N</span>
+                </button>
+              </li>
+              <li class="dividing">
+                <button type="button" class="btn nav_tool load" aria-label="불러오기">
+                  <span>불러오기</span>
+                  <span class="skey">Ctrl+O</span>
+                </button>
+              </li>
+              <li class="dividing">
+                <button type="button" class="btn nav_tool save" aria-label="저장하기">
+                  <span>저장하기</span>
+                  <span class="skey">Ctrl+S</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool saveas" aria-label="다른 이름으로 저장하기">
+                  <span>다른 이름으로 저장하기</span>
+                  <span class="skey"></span>
+                </button>
+              </li>
+              <li class="dividing">
+                <button type="button" class="btn nav_tool export" aria-label="내보내기">
+                  <span>내보내기</span>
+                  <span class="skey"></span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool print" aria-label="인쇄하기">
+                  <span>인쇄하기</span>
+                  <span class="skey"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool undo btn--disabled" aria-label="실행 취소">
+          <svg class="svg_nav undo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.063 18.232-.538-.593a.8.8 0 0 0 0 1.186l.537-.593Zm8.124-7.357h.8a.8.8 0 0 0-1.336-.593l.537.593Zm0 14.714-.537.593a.8.8 0 0 0 1.338-.593h-.8Zm0-4.598v-.8a.8.8 0 0 0-.8.8h.8Zm7.497 2.538-.745.293.745-.293Zm.109.277.744-.293-.744.293Zm-1.011 4.404-.544-.587a.8.8 0 0 0 .973 1.262l-.43-.675Zm-6.595-12.737h-.8a.8.8 0 0 0 .8.8v-.8ZM11.6 18.825l8.125-7.357-1.073-1.186-8.126 7.357 1.075 1.186Zm8.125 6.171L11.6 17.64l-1.075 1.186 8.126 7.357 1.073-1.186Zm-1.337-4.005v4.598h1.6v-4.598h-1.6Zm.8.8h3.774v-1.6h-3.773v1.6Zm3.774 0a3.2 3.2 0 0 1 2.978 2.03l1.49-.584a4.8 4.8 0 0 0-4.468-3.046v1.6Zm2.978 2.03.11.277 1.488-.584-.108-.277-1.49.585Zm.11.277a3.19 3.19 0 0 1-.811 3.525l1.087 1.174c1.372-1.272 1.98-3.327 1.212-5.284l-1.489.585Zm.162 4.787a7.595 7.595 0 0 0 3.527-6.417h-1.6c0 2.13-1.11 4.001-2.786 5.067l.859 1.35Zm3.527-6.417v-.195h-1.6v.195h1.6Zm0-.195a7.6 7.6 0 0 0-7.6-7.6v1.6a6 6 0 0 1 6 6h1.6Zm-7.6-7.6h-2.95v1.6h2.95v-1.6Zm-3.75-3.798v4.598h1.6v-4.598h-1.6Z" fill="#D8D8D8"/>
+            </svg>
+          <span class="blind">실행 취소</span>
+          <span class="blind skey">Ctrl + Z</span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool redo btn--disabled" aria-label="다시 실행">
+          <svg class="svg_nav redo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m28.938 18.232.537-.593a.8.8 0 0 1 0 1.186l-.538-.593Zm-8.125-7.357h-.8a.8.8 0 0 1 1.336-.593l-.537.593Zm0 14.714.537.593a.8.8 0 0 1-1.338-.593h.8Zm0-4.598v-.8a.8.8 0 0 1 .8.8h-.8Zm-7.497 2.538.745.293-.745-.293Zm-.109.277-.744-.293.744.293Zm1.011 4.404.544-.587a.8.8 0 0 1-.973 1.262l.43-.675Zm6.595-12.737h.8a.8.8 0 0 1-.8.8v-.8Zm7.588 3.352-8.125-7.357 1.073-1.186 8.125 7.357-1.073 1.186Zm-8.125 6.171L28.4 17.64l1.073 1.186-8.125 7.357-1.073-1.186Zm1.337-4.005v4.598h-1.6v-4.598h1.6Zm-.8.8h-3.774v-1.6h3.773v1.6Zm-3.774 0a3.2 3.2 0 0 0-2.978 2.03l-1.49-.584a4.8 4.8 0 0 1 4.468-3.046v1.6Zm-2.978 2.03-.11.277-1.488-.584.108-.277 1.49.585Zm-.11.277a3.19 3.19 0 0 0 .811 3.525l-1.087 1.174c-1.372-1.272-1.98-3.327-1.212-5.284l1.489.585Zm-.162 4.787a7.595 7.595 0 0 1-3.527-6.417h1.6c0 2.13 1.11 4.001 2.786 5.067l-.859 1.35Zm-3.527-6.417v-.195h1.6v.195h-1.6Zm0-.195a7.6 7.6 0 0 1 7.6-7.6v1.6a6 6 0 0 0-6 6h-1.6Zm7.6-7.6h2.95v1.6h-2.95v-1.6Zm3.75-3.798v4.598h-1.6v-4.598h1.6Z" fill="#D8D8D8"/>
+            </svg>
+          <span class="blind">다시 실행</span>
+          <span class="blind skey">Ctrl + Y</span>
+        </button>
+      </li>
+      <li class="items">
+        <div class="dropdown_wrap">
+          <button type="button" class="btn dropdown_toggle select" aria-label="선택 도구">
+            <svg class="svg_nav select" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block">
+              <path d="m11.95 11.95.273-.752a.8.8 0 0 0-1.025 1.025l.752-.274Zm15.545 5.645.315.736a.8.8 0 0 0-.042-1.488l-.273.752Zm-9.9 9.9-.751.273a.8.8 0 0 0 1.487.042l-.735-.315Zm2.102-4.899.566-.565a.8.8 0 0 0-1.301.25l.735.315Zm7.496 5.234.566.566-.566-.566Zm.566-.565-.566-.566.566.566Zm-5.248-7.511-.566-.566a.8.8 0 0 0 0 1.131l.566-.565Zm.036-.036-.316-.735a.8.8 0 0 0-.25.17l.566.565Zm-10.87-7.017 15.545 5.646.546-1.504-15.545-5.645-.546 1.503Zm6.67 14.52-5.645-15.545-1.504.547 5.646 15.545 1.503-.546Zm.615-4.94-2.102 4.898 1.47.631 2.102-4.898-1.47-.631Zm6.534 4.984-5.233-5.234-1.132 1.131 5.234 5.234 1.131-1.131Zm1.132 0a.8.8 0 0 1-1.132 0l-1.131 1.13a2.4 2.4 0 0 0 3.394 0l-1.131-1.13Zm.566-.566-.566.566 1.131 1.13.566-.565-1.131-1.131Zm0-1.132a.8.8 0 0 1 0 1.132l1.13 1.131a2.4 2.4 0 0 0 0-3.394l-1.13 1.131Zm-5.249-5.248 5.248 5.248 1.132-1.13-5.248-5.249-1.132 1.131Zm.036-1.167-.036.036 1.132 1.131.035-.035-1.13-1.132Zm5.199-2.292-4.949 2.123.631 1.47 4.948-2.122-.63-1.47Z" fill="#D8D8D8"/>
+            </svg>
+            <svg class="svg_nav delete" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <rect x="10.5148" y="22.9004" width="15" height="8" rx="1" transform="rotate(-45 10.5148 22.9004)" stroke="#D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.2118 24.5974C11.6178 24.0034 11.3208 23.7064 11.2095 23.3639C11.1116 23.0627 11.1116 22.7381 11.2095 22.4369C11.3208 22.0944 11.6178 21.7974 12.2118 21.2033L14.0503 19.3649L19.7072 25.0217L17.8687 26.8602C17.2747 27.4542 16.9776 27.7512 16.6352 27.8625C16.3339 27.9604 16.0094 27.9604 15.7081 27.8625C15.3656 27.7512 15.0686 27.4542 14.4746 26.8602L12.2118 24.5974Z" stroke="#D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 28.2012L16 28.2012" stroke="#D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="svg_nav empty" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <path d="M23.1999 15.2V14.56C23.1999 13.6639 23.1999 13.2159 23.0255 12.8736C22.8721 12.5726 22.6273 12.3278 22.3263 12.1744C21.984 12 21.536 12 20.6399 12H19.3599C18.4638 12 18.0157 12 17.6735 12.1744C17.3724 12.3278 17.1276 12.5726 16.9742 12.8736C16.7998 13.2159 16.7998 13.6639 16.7998 14.56V15.2M18.3999 19.6V23.6M21.5999 19.6V23.6M12.7998 15.2H27.1999M25.5999 15.2V24.16C25.5999 25.5041 25.5999 26.1762 25.3383 26.6896C25.1082 27.1412 24.7411 27.5083 24.2895 27.7384C23.7761 28 23.104 28 21.7599 28H18.2399C16.8957 28 16.2236 28 15.7103 27.7384C15.2587 27.5083 14.8915 27.1412 14.6614 26.6896C14.3998 26.1762 14.3998 25.5041 14.3998 24.16V15.2" stroke="#D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="blind">선택 도구</span>
+          </button>
+
+          <div class="dropdown_menu">
+            <ul class="dropdown_list">
+              <li>
+                <button type="button" class="btn nav_tool select" aria-label="객체 선택">
+                  <i class="svg_nav select"></i>
+                  <span>객체 선택</span>
+                  <span class="skey">(V)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool delete" aria-label="화면 이동">
+                  <i class="svg_nav delete"></i>
+                  <span>객체 지우기</span>
+                  <span class="skey">(E)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool empty" aria-label="화면 이동">
+                  <i class="svg_nav empty"></i>
+                  <span>전체 지우기</span>
+                  <span class="skey">(A)</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool text" aria-label="쓰기">
+          <svg class="svg_nav text" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0499 12.0008C11.0499 11.4761 11.4753 11.0508 12 11.0508H28C28.5246 11.0508 28.95 11.4761 28.95 12.0008V16.0008C28.95 16.5255 28.5246 16.9508 28 16.9508C27.4753 16.9508 27.05 16.5255 27.05 16.0008V12.9508H20.9487C20.9495 12.9673 20.95 12.984 20.95 13.0008V27.0008C20.95 27.0176 20.9495 27.0342 20.9487 27.0508H22C22.5246 27.0508 22.95 27.4761 22.95 28.0008C22.95 28.5255 22.5246 28.9508 22 28.9508H18C17.4753 28.9508 17.05 28.5255 17.05 28.0008C17.05 27.4761 17.4753 27.0508 18 27.0508H19.0512C19.0504 27.0342 19.05 27.0176 19.05 27.0008V13.0008C19.05 12.984 19.0504 12.9673 19.0512 12.9508H12.95V16.0008C12.95 16.5255 12.5246 16.9508 12 16.9508C11.4753 16.9508 11.0499 16.5255 11.0499 16.0008V12.0008Z" fill="#D8D8D8"/>
+          </svg>
+            
+          <span class="blind">쓰기</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool draw" aria-label="그리기">
+          <svg class="svg_nav draw" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.28 10.3748C12.6258 9.98014 13.226 9.94049 13.6206 10.2862C14.8514 11.3645 15.6445 12.89 15.514 14.6402C15.3843 16.3807 14.3564 18.1486 12.3525 19.7705C11.3 20.6224 10.7416 21.3694 10.4678 21.9979C10.2014 22.6092 10.1814 23.1592 10.2981 23.6821C10.4196 24.2259 10.6957 24.7672 11.0648 25.3231C11.3237 25.7131 11.593 26.0617 11.868 26.4177L11.868 26.4177L11.8683 26.418C11.9981 26.5861 12.1292 26.7558 12.261 26.9321C12.5751 27.3524 12.4889 27.9477 12.0686 28.2618C11.6484 28.5759 11.053 28.4897 10.739 28.0694C10.6422 27.94 10.5316 27.7967 10.4132 27.6433C10.1203 27.2637 9.7794 26.8222 9.48188 26.374C9.05195 25.7265 8.63719 24.962 8.44382 24.0962C8.24579 23.2095 8.28705 22.2461 8.72595 21.2389C9.15738 20.2488 9.94833 19.272 11.1572 18.2936C12.8985 16.8842 13.5404 15.5563 13.6193 14.499C13.6974 13.4513 13.2378 12.4768 12.3686 11.7154C11.974 11.3696 11.9343 10.7694 12.28 10.3748ZM25.6642 14.7964L16.3663 24.0943C16.3233 24.1373 16.2907 24.1895 16.2709 24.2469L15.0758 27.7182L18.5471 26.5231C18.6045 26.5033 18.6567 26.4707 18.6997 26.4277L27.9976 17.1298L25.6642 14.7964ZM26.7956 13.665L27.5918 12.8687C27.7481 12.7125 28.0013 12.7125 28.1575 12.8687L29.9253 14.6365C30.0815 14.7927 30.0815 15.046 29.9253 15.2022L29.129 15.9985L26.7956 13.665ZM15.2349 22.9629C15.02 23.1778 14.857 23.4388 14.758 23.7261L13.1625 28.3605C12.8913 29.1482 13.6458 29.9027 14.4336 29.6315L19.0679 28.036C19.3552 27.937 19.6162 27.774 19.8311 27.5591L31.0567 16.3335C31.8377 15.5525 31.8377 14.2862 31.0567 13.5051L29.2889 11.7373C28.5079 10.9563 27.2415 10.9563 26.4605 11.7373L15.2349 22.9629Z" fill="#D8D8D8"/>
+          </svg>
+
+          <span class="blind">그리기</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool image" aria-label="이미지">
+          <svg class="svg_nav image" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11.7113H12C11.7791 11.7113 11.6 11.8904 11.6 12.1113V22.7689L14.4343 19.9346C14.7467 19.6221 15.2533 19.6221 15.5657 19.9346L19 23.3689L24.4343 17.9346C24.7467 17.6221 25.2533 17.6221 25.5657 17.9346L28.4 20.7689V12.1113C28.4 11.8904 28.2209 11.7113 28 11.7113ZM28.4 23.0316V28.1113C28.4 28.3322 28.2209 28.5113 28 28.5113H12C11.7791 28.5113 11.6 28.3322 11.6 28.1113V25.0316L15 21.6316L18.4343 25.0659C18.7467 25.3783 19.2533 25.3783 19.5657 25.0659L25 19.6316L28.4 23.0316ZM12 10.1113C10.8954 10.1113 10 11.0068 10 12.1113V28.1113C10 29.2159 10.8954 30.1113 12 30.1113H28C29.1046 30.1113 30 29.2159 30 28.1113V12.1113C30 11.0068 29.1046 10.1113 28 10.1113H12ZM19 16.0002C19 17.1048 18.1046 18.0002 17 18.0002C15.8954 18.0002 15 17.1048 15 16.0002C15 14.8957 15.8954 14.0002 17 14.0002C18.1046 14.0002 19 14.8957 19 16.0002Z" fill="#D8D8D8"/>
+          </svg>
+
+          <span class="blind">이미지</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool video" aria-label="영상">
+          <svg class="svg_nav video" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8 11.7113H22.2V14.0002H20.8V11.7113ZM25.2 11.7113H23.8V14.0002H25.2V11.7113ZM26.8 11.7113H28C28.2209 11.7113 28.4 11.8904 28.4 12.1113V14.0002H26.8V11.7113ZM19.2 11.7113V14.0002H17.8V11.7113H19.2ZM14.8 14.0002H16.2V11.7113H14.8V14.0002ZM13.2 14.0002H11.6V12.1113C11.6 11.8904 11.7791 11.7113 12 11.7113H13.2V14.0002ZM11.6 28.1113V15.6002H28.4V28.1113C28.4 28.3322 28.2209 28.5113 28 28.5113H12C11.7791 28.5113 11.6 28.3322 11.6 28.1113ZM10 12.1113C10 11.0068 10.8954 10.1113 12 10.1113H28C29.1046 10.1113 30 11.0068 30 12.1113V28.1113C30 29.2159 29.1046 30.1113 28 30.1113H12C10.8954 30.1113 10 29.2159 10 28.1113V12.1113ZM23 22.0002L18 25.0002V19.0002L23 22.0002Z" fill="#D8D8D8"/>
+          </svg>
+            
+          <span class="blind">영상</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool audio" aria-label="음성">
+          <svg class="svg_nav audio" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5556 11.7992C15.9298 11.7992 12.8 15.2402 12.8 19.7377V20.0058C12.8661 20.0014 12.9328 19.9992 13 19.9992C14.6569 19.9992 16 21.3424 16 22.9992V26.9992C16 28.6561 14.6569 29.9992 13 29.9992C11.3431 29.9992 10 28.6561 10 26.9992V22.9992C10 22.0177 10.4713 21.1463 11.2 20.599V19.7377C11.2 14.5829 14.8356 10.1992 19.5556 10.1992H20.4444C25.1644 10.1992 28.8 14.5829 28.8 19.7377V20.599C29.5287 21.1463 30 22.0177 30 22.9992V26.9992C30 28.6561 28.6569 29.9992 27 29.9992C25.3431 29.9992 24 28.6561 24 26.9992V22.9992C24 21.3424 25.3431 19.9992 27 19.9992C27.0672 19.9992 27.1339 20.0014 27.2 20.0058V19.7377C27.2 15.2402 24.0702 11.7992 20.4444 11.7992H19.5556ZM14.4 26.9992V22.9992C14.4 22.226 13.7732 21.5992 13 21.5992C12.2268 21.5992 11.6 22.226 11.6 22.9992V26.9992C11.6 27.7724 12.2268 28.3992 13 28.3992C13.7732 28.3992 14.4 27.7724 14.4 26.9992ZM28.4 22.9992V26.9992C28.4 27.7724 27.7732 28.3992 27 28.3992C26.2268 28.3992 25.6 27.7724 25.6 26.9992V22.9992C25.6 22.226 26.2268 21.5992 27 21.5992C27.7732 21.5992 28.4 22.226 28.4 22.9992Z" fill="#D8D8D8"/>
+          </svg>
+
+          <span class="blind">음성</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool background" aria-label="배경">
+          <svg class="svg_nav background" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11.711H12a.4.4 0 0 0-.4.4v16c0 .221.18.4.4.4h16a.4.4 0 0 0 .4-.4v-16a.4.4 0 0 0-.4-.4Zm-16-1.6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-16a2 2 0 0 0-2-2H12Z" fill="#D8D8D8"/>
+            <path d="m11 24.5 4-4 4 4 6-6 4 4" stroke="#D8D8D8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="18" height="14">
+              <path d="M11 11h18v12.5L25 19l-6 6-3.5-4-4.5 4V11Z" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#a)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13.4h1.05v-2H9.5v2Zm3.15 0h2.1v-2h-2.1v2H11.6v2h1.05v2H11.6v2h1.05v-2h2.1v-2h-2.1v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v2h-2.1v2h2.1v-2h2.1v-2h-2.1v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v2h-2.1v2h2.1v-2h2.1v-2h-2.1v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v2h-2.1v2h2.1v-2h2.1v-2h-2.1v-2Zm4.2 0h1.05v-2h-1.05v2h-2.1v2h2.1v2h-2.1v2h2.1v-2h1.05v-2h-1.05v-2Zm2.1 2h1.05v-2h-1.05v2Zm-21 2H9.5v-2h1.05v2Zm21 2h1.05v-2h-1.05v2Zm-21 2H9.5v-2h1.05v2Zm2.1 0h2.1v-2h-2.1v2H11.6v2h1.05v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v-2Zm4.2 0h2.1v-2h-2.1v2h-2.1v2h2.1v-2Zm4.2 0h1.05v-2h-1.05v2h-2.1v2h2.1v-2Zm2.1 2h1.05v-2h-1.05v2Z" fill="#D8D8D8"/>
+            </g>
+          </svg>
+
+          <span class="blind">배경</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool cevent" aria-label="가리기">
+          <svg class="svg_nav cevent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6187 20.171V20.171C14.9492 20.6551 15.7067 20.4212 15.7067 19.835V15.8824V11.1762C15.7067 10.5266 16.2513 10 16.9338 10C17.6115 10 18.1942 10.515 18.2372 11.1779L18.5375 15.8142C18.5489 15.9906 18.5906 16.1647 18.6044 16.3409C18.6081 16.3872 18.6099 16.4367 18.6099 16.4896V16.1094C18.6099 15.5836 19.0758 15.1577 19.651 15.1577C20.8008 15.1577 21.7326 16.0095 21.7326 17.0604V16.6802C21.7326 16.1545 22.1985 15.7286 22.7736 15.7286C23.9234 15.7286 24.8552 16.5803 24.8552 17.6313V17.2511C24.8552 16.7253 25.3211 16.2995 25.8963 16.2995C27.046 16.2995 27.9778 17.1512 28 18.2021V22.9489C28 23.5863 27.723 24.5424 27.3878 25.0976C27.3793 25.1117 27.3718 25.1234 27.3629 25.1372C27.2031 25.3842 25.5236 28.0004 25.5236 28.8589V28.8589C25.5236 29.4891 25.0127 30 24.3824 30H24.2965H21.8422H18.0749C17.4447 30 16.9338 29.4891 16.9338 28.8589V28.8589C16.9338 27.9965 14.1605 25.7584 13.9206 25.5665C13.9083 25.5567 13.8982 25.5485 13.8862 25.5383C13.3845 25.1129 12.7863 24.2881 12.5503 23.7028L11.0443 19.9672C10.9207 19.6605 11.0647 19.2914 11.3651 19.1433L11.083 19.2823C12.2934 18.6857 13.8758 19.0828 14.6187 20.171Z" stroke="#D8D8D8" stroke-width="1.6" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6971 9.56635C11.3847 9.25393 10.8781 9.25393 10.5657 9.56635C10.2533 9.87877 10.2533 10.3853 10.5657 10.6977L12.0931 12.2251C12.4055 12.5375 12.912 12.5375 13.2244 12.2251C13.5368 11.9126 13.5368 11.4061 13.2244 11.0937L11.6971 9.56635ZM9.80006 13.0007C9.35823 13.0007 9.00006 13.3588 9.00006 13.8007C9.00006 14.2425 9.35823 14.6007 9.80006 14.6007H12.2001C12.6419 14.6007 13.0001 14.2425 13.0001 13.8007C13.0001 13.3588 12.6419 13.0007 12.2001 13.0007H9.80006Z" fill="#D8D8D8"/>
+            </svg>
+
+          <span class="blind">가리기</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <button type="button" class="btn nav_tool template" aria-label="템플릿">
+          <svg class="svg_nav template" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6 12C11.6 11.7791 11.7791 11.6 12 11.6H28C28.2209 11.6 28.4 11.7791 28.4 12V16.2H18H12C11.8543 16.2 11.7177 16.239 11.6 16.307V12ZM11.6 17.693C11.7177 17.761 11.8543 17.8 12 17.8H17.2L17.2 28.4H12C11.7791 28.4 11.6 28.2209 11.6 28V17.693ZM18.8 17.8H28.4V28C28.4 28.2209 28.2209 28.4 28 28.4H18.8V17.8ZM10 12C10 10.8954 10.8954 10 12 10H28C29.1046 10 30 10.8954 30 12V28C30 29.1046 29.1046 30 28 30H12C10.8954 30 10 29.1046 10 28V12Z" fill="#D8D8D8"/>
+            </svg>
+
+          <span class="blind">템플릿</span>
+          <span class="blind skey"></span>
+        </button>
+      </li>
+      <li class="items">
+        <div class="dropdown_wrap">
+          <button type="button" class="btn dropdown_toggle arrange btn--disabled" aria-label="정렬">
+            <svg class="svg_nav arrange" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8 10c.4 0 .8.4.8.8v18.4c0 .4-.4.8-.8.8s-.8-.4-.8-.8V10.8c0-.4.4-.8.8-.8zM25 14h-9c-.6 0-1 .4-1 1v3c0 .6.4 1 1 1h9c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1zm-.6 3.4h-7.8v-1.8h7.8v1.8zM29 21H16c-.6 0-1 .4-1 1v3c0 .6.4 1 1 1h13c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1zm-.6 3.4H16.6v-1.8h11.8v1.8z" fill="#D8D8D8"/>
+            </svg>
+            <span class="blind">정렬</span>
+          </button>
+
+          <div class="dropdown_menu">
+            <ul class="dropdown_list">
+              <li>
+                <button type="button" class="btn nav_tool arrange left" aria-label="왼쪽 맞춤">
+                  <i class="img_arrange arrange_left"></i>
+                  <span>왼쪽 맞춤</span>
+                  <span class="skey">(L)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool arrange center" aria-label="가운데 맞춤">
+                  <i class="img_arrange arrange_center"></i>
+                  <span>가운데 맞춤</span>
+                  <span class="skey">(C)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool arrange right" aria-label="오른쪽 맞춤">
+                  <i class="img_arrange arrange_right"></i>
+                  <span>오른쪽 맞춤</span>
+                  <span class="skey">(R)</span>
+                </button>
+              </li>
+              <li class="dividing">
+                <button type="button" class="btn nav_tool arrange top" aria-label="위쪽 맞춤">
+                  <i class="img_arrange arrange_top"></i>
+                  <span>위쪽 맞춤</span>
+                  <span class="skey">(T)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool arrange middle" aria-label="중간 맞춤">
+                  <i class="img_arrange arrange_middle"></i>
+                  <span>중간 맞춤</span>
+                  <span class="blind skey">(M)</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn nav_tool arrange bottom" aria-label="아래쪽 맞춤">
+                  <i class="img_arrange arrange_bottom"></i>
+                  <span>아래쪽 맞춤</span>
+                  <span class="skey">(B)</span>
+                </button>
+              </li>
+              <li class="dividing is--disabled">
+                <button type="button" class="btn nav_tool arrange horizontal btn--disabled" aria-label="가로 간격을 동일하기">
+                  <i class="img_arrange arrange_horizontal"></i>
+                  <span>가로 간격을 동일하기</span>
+                  <span class="skey">(H)</span>
+                </button>
+              </li>
+              <li class="is--disabled">
+                <button type="button" class="btn nav_tool arrange vertical btn--disabled" aria-label="세로 간격을 동일하기">
+                  <i class="img_arrange arrange_vertical"></i>
+                  <span>세로 간격을 동일하기</span>
+                  <span class="skey">(V)</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="items is--disabled">
+        <span class="check_wrap">
+          <input type="checkbox" class="blind" id="checkSnapTool" checked>
+          <label class="clabel" for="checkSnapTool">스냅</label>
+        </span>
+      </li>
+    </ul>
+
+    <ul class="controlbar">
+      <li class="items">
+        <span class="pageinfo">
+          <button type="button" class="btn nav_tool page prev btn--disabled" aria-label="이전 페이지">
+            <svg class="svg_nav page_prev" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="m5 10 6-6.154v12.308L5 10Z" fill="#D8D8D8"/>
+            </svg>
+            <span class="blind">이전 슬라이드</span>
+            <span class="blind skey"></span>
+          </button>
+
+          <span class="num scw90">
+            <span class="current">1</span><span class="total">1</span>
+            <input type="number" autocomplete="off">
+          </span>
+
+          <button type="button" class="btn nav_tool page next" aria-label="다음 페이지">
+            <svg class="svg_nav page_next" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 10 5 3.846v12.308L11 10Z" fill="#D8D8D8"/>
+            </svg>
+            <span class="blind">다음 슬라이드</span>
+            <span class="blind skey"></span>
+          </button>
+        </span>
+      </li>
+    </ul>

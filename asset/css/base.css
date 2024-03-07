@@ -1,0 +1,354 @@
+@charset "utf-8";
+/**
+ * Selpub Creator - Base v1.0 : 2022-01-10
+*/
+/* ------------------------------------------------------------------------------------------------------------- */
+/* body */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* block element */
+.area,
+[class*="_area"] {
+  display: block;
+  box-sizing: border-box;
+}
+
+.box,
+[class*="_box"] {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+[class*="_wrap"] {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.inner {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* SVG COMMON */
+[class*="svg_"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/*  btn */
+.btn,
+[class*="btn_"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn.b_t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.btn.btn--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn_wrap {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.btn_wrap ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_wrap ul li + li {
+  margin-left: 6px;
+}
+
+.btn_wrap > div {
+  display: inline-flex;
+}
+
+.btn_wrap > div + div {
+  margin-left: 6px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Alternate Images & Alternate Text */
+.a_n {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.a_n .a_i,
+.a_n [class*="svg_"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.a_t {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-indent: 0;
+}
+
+.a_n .a_t {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* display */
+.is--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide,
+.show.hide {
+  display: none;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  text-indent: -9999px;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.item_list {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item_list>li,
+.item_list>div,
+.item_list>.items {
+  float: left;
+  box-sizing: border-box;
+}
+
+.item_list:after,
+.item_list>li:last-child:after,
+.item_list>div:last-child:after,
+.item_list>.items:last-child:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fl:last-child:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.flex > * {
+  box-sizing: border-box;
+}
+
+.flex.row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex.center {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex.around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex.between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.inline_flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.block_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* font */
+.bold {
+  font-weight: 700;
+}
+
+.italic, i {
+  font-style: italic;
+}
+
+.underline {
+  border-bottom: 1px solid #333;
+}
+
+.wbreak {
+  word-break: keep-all;
+}
+
+.tal {
+  text-align: left !important;
+}
+
+.tac {
+  text-align: center !important;
+}
+
+.tar {
+  text-align: right !important;
+}
+
+.taj {
+  text-align: justify !important;
+}
+
+.indent {
+  text-indent: 0.7em;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* label */
+.lab {
+  display: block;
+  position: absolute;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #777777;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* 모바일 - PC */
+.dev--desktop,
+.is_pc .dev--desktop,
+.is_mobile .dev--mobile {
+  display: block;
+}
+
+.dev--mobile,
+.is_pc .dev--mobile,
+.is_mobile .dev--desktop {
+  display: none;
+}
+
+/* Responsive - mobile : 767 ▼ */
+@media all and (max-width:767px) {
+  .dev--desktop {
+    display: none;
+  }
+
+  .dev--mobile {
+    display: block;
+  }
+}
