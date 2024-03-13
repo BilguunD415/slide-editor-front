@@ -673,7 +673,7 @@
         }
 
         function show() {
-            // debugger;
+    
             var event = $.Event('beforeShow.spectrum');
 
             if (visible) {

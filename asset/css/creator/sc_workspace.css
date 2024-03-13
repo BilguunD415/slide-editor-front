@@ -67,9 +67,9 @@
   border: dotted 2px green;
 }
 .workspace_area .content_frame .draggable * {
-  pointer-events: none;
   position: unset;
   background: none;
+  color:#000000;
 }
 .workspace_area .content_frame .draggable canvas {
   pointer-events: auto;
@@ -82,7 +82,44 @@
 .workspace_area .content_frame .textElement{
   border-right: 2px solid #434343;
 }
+.workspace_area .content_frame .buttonElement > *{
+  border: 1px solid #434343; 
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
 
+
+.workspace_area .content_frame .coverElement  > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.workspace_area .content_frame .coverElement  div.coverHide{
+  display: none;
+}
+
+.workspace_area .content_frame .coverElement  button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.workspace_area .content_frame .buttonElement, 
+.workspace_area .content_frame .textElement, 
+.workspace_area .content_frame .imageElement,
+.workspace_area .content_frame .videoElement,
+.workspace_area .content_frame .audioElement,
+.workspace_area .content_frame .canvasElement {
+    padding:10px;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------- */

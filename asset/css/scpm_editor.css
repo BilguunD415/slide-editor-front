@@ -44,6 +44,7 @@
 }
 
 .toolbar .items>.nav_tool.text.on .svg_nav path,
+.toolbar .items>.nav_tool.button.on .svg_nav path,
 .toolbar .items>.nav_tool.draw.on .svg_nav path,
 .toolbar .items>.nav_tool.image.on .svg_nav path,
 .toolbar .items>.nav_tool.video.on .svg_nav path,

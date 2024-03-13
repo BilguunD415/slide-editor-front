@@ -231,7 +231,15 @@
       var target = e.currentTarget.closest(".panel");
       $(target).toggleClass("active");
     });
-    $(".select_toggle").on("click", function(e){
+    $(".select_toggle").on("click", (e)=>{
       var target = e.currentTarget;
+      $(".select_wrap .select_toggle").removeClass("on");
+      $(".select_wrap .select_list").removeClass("show");
+      $(target).addClass("on");
+      $(target.nextElementSibling).toggleClass("show");
     });
+    $(".panel_setting .ctrl_size input").on("change", ()=>{
+      debugger;
+    });
+
   </script>
