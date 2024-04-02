@@ -1,0 +1,96 @@
+<div class="title">
+  <h2>영상</h2>
+
+  <div class="btn_wrap">
+    <button type="button" class="btn properties_close" aria-label="속성 닫기">
+      <svg class="svg_properties_close" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L1 13" stroke="#979797" stroke-width="2"></path>
+        <path d="M9 1L15 7L9 13" stroke="#979797" stroke-width="2"></path>
+      </svg>
+      <span class="blind">속성 닫기</span>
+    </button>
+  </div>
+</div>
+
+<div class="inner scroll_box">
+  <!-- // 속성 - 연결 -->
+  <div class="panel active">
+    <div class="panel_title">
+      <h3>연결</h3>
+      <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+        <i class="arrow_down"></i><span class="blind">속성 열기</span>
+      </span>
+    </div>
+
+    <div class="panel_setting">
+      <div class="panel_subtree">
+        <div class="row">
+          <span class="word">File<span class="wcln">:</span></span>
+          <div class="input_box method_cloud mw190">
+            <input type="text" name="fileChooserName" class="scw90" placeholder="" disabled readonly>
+            <input type="file" name="fileChooser" class="hide">
+            <span role="button" class="btn find_more" aria-label="찾아보기" onclick="onChangeVideo()">
+              <i class="svg_find_more"></i>
+              <span class="blind">찾아보기</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- // 속성 - 위치 -->
+  <div class="panel active">
+    <div class="panel_title">
+      <h3>위치</h3>
+      <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+        <i class="arrow_down"></i><span class="blind">속성 열기</span>
+      </span>
+    </div>
+
+    <div class="panel_setting">
+      <div class="panel_subtree">
+        <div class="row ctrl_size">
+          <div class="col">
+            <span class="word">Left<span class="wcln">:</span></span>
+            <input type="number" name="left" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+          <div class="col">
+            <span class="word">Top<span class="wcln">:</span></span>
+            <input type="number" name="top" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+        </div>
+        <div class="row ctrl_size ctrl_rate">
+          <div class="col">
+            <span class="word">Width<span class="wcln">:</span></span>
+            <input type="number" name="width" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+          <div class="col">
+            <span class="word">Height<span class="wcln">:</span></span>
+            <input type="number" name="height" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+
+          <div class="btn_wrap rate">
+            <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+              <svg class="svg_restrict" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                  stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                <path
+                  d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                  stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+              </svg>
+              <span class="blind">비율 유지</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="./layout/sidebar/sidebarVideo.js"></script>

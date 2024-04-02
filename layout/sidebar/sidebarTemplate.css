@@ -1,0 +1,37 @@
+.panel.sub.sub2 .panel_subtree div.row {
+    padding: 0px;
+    height: 64px;
+}
+
+.panel.sub.sub2 .panel_subtree div.row>div {
+    margin: 0px;
+    padding: 0px;
+    height: 64px;
+    width: 70px;
+    background: #4E5154;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    align-content: space-evenly;
+    letter-spacing: -1.2px;
+    line-height: 15px;
+}
+
+.panel.sub.sub2 .panel_subtree div.row>div * {
+    stroke: #FFFFFF;
+}
+
+.panel.sub.sub2 .panel_subtree div.row>div:hover {
+    background: #222629;
+    color: #77DCB3;
+    cursor: pointer;
+}
+
+.panel.sub.sub2 .panel_subtree div.row>div:hover * {
+    stroke: #77DCB3;
+}
+
+.panel.sub.sub2 .panel_subtree div.row>div:hover path {
+    fill: #77DCB3;
+}

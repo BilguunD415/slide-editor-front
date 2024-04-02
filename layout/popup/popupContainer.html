@@ -1,0 +1,1177 @@
+<div id="popupDocumentOption" class="popup full pop_new_doc">
+    <div class="scroll_box">
+        <div class="title">
+            <h2>프로젝트 정보 설정</h2>
+        </div>
+
+        <div class="inner">
+            <div class="tab_container">
+                <ul>
+                    <li class="tab_menu on" data-tab-menu="info">
+                        <span>일반</span>
+                    </li>
+                    <li class="tab_menu" data-tab-menu="advanced">
+                        <span>옵션</span>
+                    </li>
+                </ul>
+
+                <div class="tab_content show" data-tab-list="info">
+                    <div class="panel type_info active">
+                        <div class="panel_title">
+                            <h3>책 정보</h3>
+                            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                      <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                    </span>
+                        </div>
+
+                        <div class="panel_setting">
+                            <div class="inflex">
+                                <span class="txt scw90">제목</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90" maxlength="50" placeholder="책 제목을 입력하세요.">
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">출간일</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90 hasDatepicker" placeholder="" readonly=""
+                                           id="dp1709772565673" size="10">
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">출판사</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90" maxlength="30"
+                                           placeholder="출판사(저자)를 입력하세요.">
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">저자</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90" maxlength="100" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">분류</span>
+                                <div class="select_wrap">
+                                    <span class="select_toggle">선택</span>
+                                    <span class="select_list">
+                          <span class="scroll_box"></span>
+                        </span>
+                                </div>
+                            </div>
+
+                            <div class="inflex is--disabled">
+                                <span class="txt scw90">교육과정</span>
+                                <div class="select_wrap">
+                                    <span class="select_toggle">선택</span>
+                                    <span class="select_list">
+                          <span class="scroll_box"></span>
+                        </span>
+                                </div>
+                            </div>
+
+                            <div class="inflex is--disabled">
+                                <span class="txt scw90">학년</span>
+                                <div class="select_wrap">
+                                    <span class="select_toggle">선택</span>
+                                    <span class="select_list">
+                          <span class="scroll_box"></span>
+                        </span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">교과(군)</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90" maxlength="100" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">주제</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" class="scw90" maxlength="100" placeholder="">
+                                    <textarea class="scw90 input_t" maxlength="500" placeholder="책에 대한 소개를 입력해주세요."></textarea>
+                                    <span class="text_count"><em>0</em>/500</span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">시작 페이지</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="number" class="scw90" placeholder="" value="1">
+                                    <span class="guide_txt">
+                          ※ 원본 파일과 셀펍 Viewer의 페이지가 맞지 않을 경우 값을 조정해 주세요.<br>
+                          ex. 3입력 : 1,2,3,4,5 ... -&gt; -2, -1,1,2,3 ...원본 파일의 3페이지가 셀펍 Viewer의 1페이지로 보여집니다.
+                        </span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt scw90">표지</span>
+                                <div class="input_box">
+                                    <div class="box radio">
+                                        <div class="radio_box">
+                                            <input type="radio" name="setting_cover" id="setting-coverPdf" class="blind" checked="">
+                                            <label class="rlabel" for="setting-coverPdf">원본 표지</label>
+                                        </div>
+                                        <div class="radio_box">
+                                            <input type="radio" name="setting_cover" id="setting-coverNew" class="blind">
+                                            <label class="rlabel" for="setting-coverNew">신규 표지</label>
+                                        </div>
+                                    </div>
+                                    <div class="input_box is--disabled">
+                                        <input type="text" class="scw90" placeholder="표지_이미지.jpg" disabled=""
+                                               style="padding-right: 10px;">
+                                        <span role="button" class="btn find_more" aria-label="찾아보기">
+                            <i class="svg_find_more"></i>
+                            <span class="blind">찾아보기</span>
+                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel type_toc active">
+                        <div class="panel_title">
+                            <h3>목차</h3>
+                            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                      <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                    </span>
+                        </div>
+
+                        <div class="panel_setting">
+                            <div class="thumbnail_area">
+                                <h4>섬네일</h4>
+                                <div class="scroll_box" style="height: 272px;">
+                                    <ul></ul>
+                                </div>
+                            </div>
+
+                            <div class="toc_area">
+                                <h4>목차 정보 편집</h4>
+
+                                <ul class="toc_list_head">
+                                    <li><span>들여쓰기</span></li>
+                                    <li><span>내용</span></li>
+                                    <li><span>페이지</span></li>
+                                    <li><span class="blind">편집</span></li>
+                                </ul>
+
+                                <ul class="toc_list_body"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_content" data-tab-list="advanced">
+                    <div class="panel type_sound active">
+                        <div class="panel_title">
+                            <h3>효과음</h3>
+                            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                      <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                    </span>
+                        </div>
+
+                        <div class="panel_setting">
+                            <div class="inflex">
+                                <span class="txt">버튼 클릭 효과음</span>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                        <i class="svg_play_sound"></i>
+                                        <span class="blind">재생</span>
+                                    </button>
+                                    <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                        <i class="svg_mp3_change"></i>
+                                        <span class="blind">음성 교체</span>
+                                    </button>
+                                    <button type="button" class="btn play_sound mp3_recover" aria-label="음성 복원">
+                                        <i class="svg_mp3_recover"></i>
+                                        <span class="blind">음성 복원</span>
+                                    </button>
+                                </div>
+
+                                <div class="on_off_radio">
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_btnSound" id="setting-btnSoundOff" class="blind">
+                                        <label class="rlabel" for="setting-btnSoundOff">OFF</label>
+                                    </div>
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_btnSound" id="setting-btnSoundOn" class="blind" checked="">
+                                        <label class="rlabel" for="setting-btnSoundOn">ON</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">퀴즈 활동 효과음</span>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                        <i class="svg_play_sound"></i>
+                                        <span class="blind">재생</span>
+                                    </button>
+                                    <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                        <i class="svg_mp3_change"></i>
+                                        <span class="blind">음성 교체</span>
+                                    </button>
+                                    <button type="button" class="btn play_sound mp3_recover on" aria-label="음성 복원">
+                                        <i class="svg_mp3_recover"></i>
+                                        <span class="blind">음성 복원</span>
+                                    </button>
+                                </div>
+
+                                <div class="on_off_radio">
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizActive" id="setting-quizActiveOff" class="blind">
+                                        <label class="rlabel" for="setting-quizActiveOff">OFF</label>
+                                    </div>
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizActive" id="setting-quizActiveOn" class="blind"
+                                               checked="">
+                                        <label class="rlabel" for="setting-quizActiveOn">ON</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">정·오답 피드백 효과음</span>
+
+                                <div class="on_off_radio">
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizFeedback" id="setting-quizFeedbackOff" class="blind"
+                                               checked="">
+                                        <label class="rlabel" for="setting-quizFeedbackOff">OFF</label>
+                                    </div>
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizFeedback" id="setting-quizFeedbackOn" class="blind">
+                                        <label class="rlabel" for="setting-quizFeedbackOn">ON</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback_list">
+                                <ul>
+                                    <li>
+                                        <div class="radio_box">
+                                            <input type="radio" name="setting_feedbackType" id="setting-feedbackType1" class="blind"
+                                                   checked="">
+                                            <label class="rlabel" for="setting-feedbackType1">A 타입</label>
+                                        </div>
+
+                                        <div class="sublist">
+                                            <span class="txt">정답</span>
+                                            <div class="btn_wrap">
+                                                <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                                    <i class="svg_play_sound"></i>
+                                                    <span class="blind">재생</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                                    <i class="svg_mp3_change"></i>
+                                                    <span class="blind">음성 교체</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_recover" aria-label="음성 복원">
+                                                    <i class="svg_mp3_recover"></i>
+                                                    <span class="blind">음성 복원</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="sublist">
+                                            <span class="txt">오답</span>
+                                            <div class="btn_wrap">
+                                                <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                                    <i class="svg_play_sound"></i>
+                                                    <span class="blind">재생</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                                    <i class="svg_mp3_change"></i>
+                                                    <span class="blind">음성 교체</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_recover" aria-label="음성 복원">
+                                                    <i class="svg_mp3_recover"></i>
+                                                    <span class="blind">음성 복원</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_box">
+                                            <input type="radio" name="setting_feedbackType" id="setting-feedbackType2" class="blind">
+                                            <label class="rlabel" for="setting-feedbackType2">B 타입</label>
+                                        </div>
+
+                                        <div class="sublist">
+                                            <span class="txt">정답</span>
+                                            <div class="btn_wrap">
+                                                <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                                    <i class="svg_play_sound"></i>
+                                                    <span class="blind">재생</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                                    <i class="svg_mp3_change"></i>
+                                                    <span class="blind">음성 교체</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_recover" aria-label="음성 복원">
+                                                    <i class="svg_mp3_recover"></i>
+                                                    <span class="blind">음성 복원</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="sublist">
+                                            <span class="txt">오답</span>
+                                            <div class="btn_wrap">
+                                                <button type="button" class="btn play_sound mp3_play" aria-label="효과음 재생">
+                                                    <i class="svg_play_sound"></i>
+                                                    <span class="blind">재생</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_change" aria-label="음성 교체">
+                                                    <i class="svg_mp3_change"></i>
+                                                    <span class="blind">음성 교체</span>
+                                                </button>
+                                                <button type="button" class="btn play_sound mp3_recover" aria-label="음성 복원">
+                                                    <i class="svg_mp3_recover"></i>
+                                                    <span class="blind">음성 복원</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel type_fonts active">
+                        <div class="panel_title">
+                            <h3>글꼴</h3>
+                            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                      <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                    </span>
+                        </div>
+
+                        <div class="panel_setting">
+                            <div class="inflex">
+                                <span class="txt">기본 글꼴</span>
+                                <div class="font_select_box">
+                                    <div class="select_wrap">
+                                        <span class="select_toggle"></span>
+                                        <span class="select_list">
+                            <span class="scroll_box"></span>
+                          </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">주관식 입력 크기</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" maxlength="2" class="input_t" value="13">
+                                    <span class="unit">px</span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">주관식 정답 크기</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" maxlength="2" class="input_t" value="13">
+                                    <span class="unit">px</span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">토스트 팝업 크기</span>
+                                <div class="input_box">
+                                    <input autocomplete="off" type="text" maxlength="2" class="input_t" value="16">
+                                    <span class="unit">px</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel type_style active">
+                        <div class="panel_title">
+                            <h3>테마</h3>
+                            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                      <i class="arrow_down"></i><span class="blind">속성 열기</span>
+                    </span>
+                        </div>
+
+                        <div class="panel_setting">
+                            <div class="inflex">
+                                <span class="txt">테마</span>
+                                <div class="select_wrap">
+                                    <span class="select_toggle"></span>
+                                    <span class="select_list">
+                          <span class="scroll_box"></span>
+                        </span>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">아이콘 크기</span>
+                                <div class="input_box mw42">
+                                    <input autocomplete="off" type="number" class="sfs14 size_num" value="0">
+                                </div>
+                                <div class="btn_wrap">
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn mbox icon_size down" aria-label="아이콘 크기 키우기">
+                                                <i class="svg_size_down"></i>
+                                                <span class="blind">줄이기</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn mbox icon_size up" aria-label="아이콘 크기 줄이기">
+                                                <i class="svg_size_up"></i>
+                                                <span class="blind">키우기</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="inflex align_t">
+                                <span class="txt">아이콘 목록</span>
+                                <div class="pop_icon_list">
+                                    <ul class="icon_list flex">
+                                        <li>
+                                            <div class="btn box">
+                                                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 9V0H9V9H0V11H9V20H11V11H20V9H11Z"
+                                                          fill="#979797"></path>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="inflex align_t">
+                                <span class="txt">퀴즈 이미지</span>
+                                <div class="pop_quiz_icon">
+                                    <ul class="icon_list"></ul>
+                                </div>
+                            </div>
+
+                            <div class="inflex">
+                                <span class="txt">틀린 표시 안 하기</span>
+                                <div class="on_off_radio">
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizMarking" id="setting-quizMarkingOff" class="blind"
+                                               checked="">
+                                        <label class="rlabel" for="setting-quizMarkingOff">OFF</label>
+                                    </div>
+                                    <div class="radio_box">
+                                        <input type="radio" name="setting_quizMarking" id="setting-quizMarkingOn" class="blind">
+                                        <label class="rlabel" for="setting-quizMarkingOn">ON</label>
+                                    </div>
+                                </div>
+
+                                <span class="guide_txt">
+                        ※ 채점 결과에 오답 채점 표시를 하지 않습니다.
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <ul>
+            <li>
+                <button type="button" class="btn b_t dull btn_close" aria-label="취소">
+                    <span>닫기</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="popupButtonIcon" class="popup layer pop_icon_list">
+    <div class="title">
+        <h2>아이콘 목록</h2>
+    </div>
+
+    <div class="inner">
+        <div class="scroll_box">
+            <ul class="icon_list flex"></ul>
+        </div>
+
+        <div class="btn_wrap">
+            <ul>
+                <li></li>
+                <li>
+                    <button type="button" class="btn btn_close b_t dull" aria-label="닫기">
+                        <span>닫기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn add-icon b_t" aria-label="추가">
+                        <span>추가</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupShortcut" class="popup layer pop_key">
+    <div class="title">
+        <h2>단축키</h2>
+    </div>
+
+    <div class="inner">
+        <div class="flex">
+            <div class="table">
+                <div class="table_head">
+                    <div>메뉴</div>
+                    <div>단축키</div>
+                </div>
+
+                <div class="table_body">
+                    <ul>
+                        <li>
+                            <div>불러오기</div>
+                            <div>Ctrl + O</div>
+                        </li>
+                        <li>
+                            <div>저장하기</div>
+                            <div>Ctrl + S</div>
+                        </li>
+                        <li>
+                            <div>컴포넌트 설정</div>
+                            <div>Ctrl + F11</div>
+                        </li>
+                        <li>
+                            <div>쓰기</div>
+                            <div>Ctrl + Shift + 1</div>
+                        </li>
+                        <li>
+                            <div>그리기</div>
+                            <div>Ctrl + Shift + 2</div>
+                        </li>
+                        <li>
+                            <div>버튼</div>
+                            <div>Ctrl + Shift + 3</div>
+                        </li>
+                        <li>
+                            <div>이미지</div>
+                            <div>Ctrl + Shift + 4</div>
+                        </li>
+                        <li>
+                            <div>영상</div>
+                            <div>Ctrl + Shift + 5</div>
+                        </li>
+                        <li>
+                            <div>음성</div>
+                            <div>Ctrl + Shift + 6</div>
+                        </li>
+                        <li>
+                            <div>배경</div>
+                            <div>Ctrl + Shift + 7</div>
+                        </li>
+                        <li>
+                            <div>가리기</div>
+                            <div>Ctrl + Shift + 8</div>
+                        </li>
+                        <li>
+                            <div>내보내기</div>
+                            <div>Ctrl + E</div>
+                        </li>
+                        <li>
+                            <div>인쇄하기</div>
+                            <div>Ctrl + P</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table key">
+                <div class="table_head">
+                    <div>메뉴</div>
+                    <div>단축키</div>
+                </div>
+
+                <div class="table_body">
+                    <ul>
+                        <li>
+                            <div>슬라이드 이전 페이지</div>
+                            <div>◀ 또는 Ctrl + ◀</div>
+                        </li>
+                        <li>
+                            <div>슬라이드 다음 페이지</div>
+                            <div>▶ 또는 Ctrl + ▶</div>
+                        </li>
+
+                        <li>
+                            <div>가로 안내선 추가</div>
+                            <div>Ctrl + Shift + [</div>
+                        </li>
+                        <li>
+                            <div>세로 안내선 추가</div>
+                            <div>Ctrl + Shift + ]</div>
+                        </li>
+                        <li>
+                            <div>히스토리 “실행 취소"</div>
+                            <div>Ctrl + Z</div>
+                        </li>
+                        <li>
+                            <div>히스토리 “다시 실행"</div>
+                            <div>Ctrl + Y</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupContentForm" class="popup layer pop_form_modify">
+    <div class="title">
+        <h2>임베디드 고급 서식</h2>
+    </div>
+
+    <div class="inner">
+        <div class="scroll_box">
+            <div class="row">
+                <p class="txt scg70">
+                    선택한 임베디드의 모양을 변경할 수 있습니다.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h4>텍스트</h4>
+
+                <div class="row fwrap dimmed">
+                    <div class="col">
+                        <span class="word">글꼴</span>
+                        <div class="font_select_box">
+                            <div class="select_wrap">
+                                <span class="select_toggle"></span>
+                                <span class="select_list">
+                        <span class="scroll_box"></span>
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <span class="word">색상</span>
+                        <span class="select_color_picker">
+                    <input type="text" class="blind">
+                    <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                         xml:space="preserve">
+                      <path class="active_color font"
+                            d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                            fill="#70CCEB"></path>
+                      <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z">
+                      </path>
+                    </svg>
+                  </span>
+                    </div>
+
+                    <div class="col">
+                        <span class="word">크기</span>
+                        <div class="font_select_box mw72">
+                            <div class="select_wrap">
+                                <span class="select_toggle"><input type="text" class="scw90" value="24"></span>
+                                <span class="select_list">
+                        <span class="scroll_box">
+                          <span class="items">10</span>
+                          <span class="items">11</span>
+                          <span class="items">12</span>
+                          <span class="items">13</span>
+                          <span class="items">14</span>
+                          <span class="items">15</span>
+                          <span class="items">16</span>
+                          <span class="items">20</span>
+                          <span class="items">24</span>
+                          <span class="items">32</span>
+                          <span class="items">36</span>
+                          <span class="items">40</span>
+                          <span class="items">48</span>
+                          <span class="items">64</span>
+                          <span class="items">96</span>
+                          <span class="items">128</span>
+                        </span>
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <span class="word">행간</span>
+                        <div class="font_select_box mw62">
+                            <div class="select_wrap">
+                                <span class="select_toggle"><input type="text" class="scw90" value="1.5"></span>
+                                <span class="select_list">
+                        <span class="scroll_box">
+                          <span class="items">1.0</span>
+                          <span class="items">1.2</span>
+                          <span class="items">1.3</span>
+                          <span class="items">1.4</span>
+                          <span class="items">1.5</span>
+                          <span class="items">1.6</span>
+                          <span class="items">2.0</span>
+                          <span class="items">2.5</span>
+                          <span class="items">3.0</span>
+                        </span>
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <span class="word">정렬</span>
+                        <div class="font_style_box">
+                    <span role="button" class="btn font_style">
+                      <i class="svg_fontstyle_al_l"></i><span class="blind">왼쪽 정렬</span>
+                    </span>
+                            <span role="button" class="btn font_style">
+                      <i class="svg_fontstyle_al_c"></i><span class="blind">중앙 정렬</span>
+                    </span>
+                            <span role="button" class="btn font_style">
+                      <i class="svg_fontstyle_al_r"></i><span class="blind">오른쪽 정렬</span>
+                    </span>
+                            <span role="button" class="btn font_style">
+                      <i class="svg_fontstyle_al_j"></i><span class="blind">양쪽 정렬</span>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="row">
+                    <div class="col p8_22">
+                        <h4>배경</h4>
+                        <span class="select_color_picker">
+                    <input type="text" class="blind">
+                    <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                         xml:space="preserve">
+                      <path class="active_color bg"
+                            d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                            fill="#70CCEB"></path>
+                      <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z">
+                      </path>
+                    </svg>
+                  </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h4>선</h4>
+                <div class="row dimmed">
+                    <div class="col">
+                        <span class="word">굵기</span>
+                        <input id="lineWidth" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">색상</span>
+                        <span class="select_color_picker">
+                    <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                         xml:space="preserve">
+                      <path class="active_color line"
+                            d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                            fill="#70CCEB"></path>
+                      <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z">
+                      </path>
+                    </svg>
+                  </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h4>그림자</h4>
+
+                <div class="row dimmed">
+                    <div class="col">
+                        <span class="word">크기</span>
+                        <input id="shadowWidth" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">투명도</span>
+                        <input id="shadowOpacity" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col p8_22">
+                    <h4>라운드</h4>
+                    <input id="round" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                    <span class="unit">px</span>
+                </div>
+                <div class="col p8_22">
+                    <h4>여백</h4>
+                    <input id="padding" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                    <span class="unit">px</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row dividing">
+            <span class="check_wrap">
+              <label class="check_label">
+                <input id="allYn" type="checkbox" class="blind">
+                <span class="clabel">전체 적용</span>
+              </label>
+            </span>
+        </div>
+
+        <div class="btn_wrap">
+            <ul>
+                <li>
+                    <button type="button" class="btn b_t dull close" aria-label="닫기">
+                        <span>닫기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t modify" aria-label="추가">
+                        <span>수정</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupIconForm" class="popup layer pop_form_modify min">
+    <div class="title">
+        <h2>모양 고급 서식</h2>
+    </div>
+
+    <div class="inner">
+        <div class="row">
+            <p class="txt scg70">
+                아이콘 목록에는 반영되지 않으며 현재 페이지에서만 선택한<br>
+                아이콘의 모양과 크기를 변경할 수 있습니다.
+            </p>
+        </div>
+
+        <div class="row">
+            <span class="check_wrap">
+              <label class="check_label">
+                <input id="resizable" type="checkbox" class="blind">
+                <span class="clabel c_end">크기 수정 허용</span>
+              </label>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="word">아이콘 모양 변경<span class="wcln">:</span></span>
+            <div class="input_box">
+                <input autocomplete="off" type="text" class="scw90" placeholder="파일명" disabled=""
+                       style="padding-right: 74px;">
+                <span role="button" class="btn find_more" aria-label="찾아보기">
+                <i class="svg_find_more"></i>
+                <span class="blind">찾아보기</span>
+              </span>
+            </div>
+        </div>
+
+        <div class="btn_wrap">
+            <ul>
+                <li>
+                    <button type="button" class="btn b_t dull close" aria-label="닫기">
+                        <span>닫기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t modify" aria-label="추가">
+                        <span>수정</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupMyDrive" class="popup layer pop_my_drive">
+    <div class="title">
+        <h2>내 자료 공간</h2>
+    </div>
+
+    <div class="inner">
+        <div class="drive_top">
+            <div class="search_area">
+                <div class="select_wrap">
+                    <span class="select_toggle">현재 위치</span>
+                    <span class="select_list">
+                  <span class="scroll_box">
+                    <span class="items">현재 위치</span>
+                    <span class="items">모든 파일</span>
+                  </span>
+                </span>
+                </div>
+
+                <div class="search_wrap">
+                <span class="search_box">
+                  <label>
+                    <span class="blind">검색</span>
+                    <input type="text" class="search_t" placeholder="검색">
+                    <button type="button" class="btn search" aria-label="검색"><span class="blind">검색</span></button>
+                  </label>
+
+                  <span role="button" class="btn search_cancel blind" aria-label="취소"><span
+                          class="blind">취소</span></span>
+                </span>
+                </div>
+            </div>
+
+            <div class="location_area">
+                <div class="location">
+                    <span>내 자료 공간</span>
+                    <span class="svg_next">&gt;</span>
+                    <span class="current">책 제목</span>
+                </div>
+            </div>
+
+            <div class="drive_option">
+                <div class="option_edit">
+                    <button type="button" class="btn drive_edit">
+                        <i class="svg_customizing"></i><span class="blind">편집하기</span>
+                    </button>
+                </div>
+
+                <div class="edit_active_box">
+                <span class="view_share">
+                  <label>
+                    <input type="checkbox" id="" class="blind">
+                    <span class="clabel">미 사용 파일</span>
+                  </label>
+                </span>
+                </div>
+
+                <div class="edit_select_text">
+                    <p class="desc">총 <span class="count">0</span>개의 선택 되었습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="drive_body">
+            <ul class="drive_list_head">
+                <li>
+                <span class="option_order list_box">
+                  <span class="is_order on">
+                    <span class="btn open_order_menu">유형</span>
+                    <span class="btn list_order"></span>
+                  </span>
+                </span>
+                </li>
+                <li>
+                <span class="option_order list_box">
+                  <span class="is_order on">
+                    <span class="btn open_order_menu">파일명</span>
+                    <span class="btn list_order"></span>
+                  </span>
+                </span>
+                </li>
+                <li>
+                <span class="option_order list_box">
+                  <span class="is_order on">
+                    <span class="btn open_order_menu">크기</span>
+                    <span class="btn list_order"></span>
+                  </span>
+                </span>
+                </li>
+                <li>
+                <span class="option_order list_box">
+                  <span class="is_order on">
+                    <span class="btn open_order_menu">날짜</span>
+                    <span class="btn list_order on"></span>
+                  </span>
+                </span>
+                </li>
+            </ul>
+
+            <div class="scroll_box">
+                <ul class="drive_list_body"></ul>
+            </div>
+        </div>
+
+        <div class="btn_wrap">
+            <ul class="show">
+                <li>
+                    <button type="button" class="btn b_t dull btn_close" aria-label="닫기">
+                        <span>닫기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t dull btn_upload" aria-label="새로 올리기">
+                        <span>새로 올리기</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t btn_link" aria-label="연결">
+                        <span>연결</span>
+                    </button>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <button type="button" class="btn b_t dull btn_all" aria-label="전체 선택">
+                        <span>전체 선택</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t dull btn_delete" aria-label="삭제">
+                        <span>삭제</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn b_t btn_done" aria-label="완료">
+                        <span>완료</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupVersion" class="popup layer pop_version">
+    <div class="title">
+        <h2>프로그램 정보</h2>
+    </div>
+
+    <div class="inner">
+        <img src="./asset/img/common/version2.svg" alt="Selpub Creator">
+
+        <p><span id="version">Version 1.0.0</span></p>
+        <p>
+            <a href="#" target="_blank"><span>Release Note</span></a>
+        </p>
+        <p>ⓒ SELVAS AI All right reserved.</p>
+
+        <div class="btn_wrap">
+            <ul>
+                <li>
+                    <button type="button" class="btn b_t dull btn_close" aria-label="닫기">
+                        <span>닫기</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn btn_close" aria-label="팝업 닫기">
+            <i class="svg_popup_close"></i>
+            <span class="blind">팝업 닫기</span>
+        </button>
+    </div>
+</div>
+<div id="popupMetadata" class="popup full pop_metadata">
+    <div class="scroll_box">
+        <div class="title">
+            <h2>메타데이터 설정</h2>
+        </div>
+
+        <div class="inner">
+            <div class="tab_container">
+                <ul></ul>
+
+                <div class="tab_content show" data-tab-list="">
+                    <div class="meta_list_top">
+                        <div class="search_area">
+                            <div class="search_wrap">
+                      <span class="search_box">
+                        <label>
+                          <span class="blind">검색</span>
+                          <input type="text" class="search_t" placeholder="검색">
+                          <button type="button" class="btn search" aria-label="검색"><span
+                                  class="blind">검색</span></button>
+                        </label>
+
+                        <span role="button" class="btn search_cancel" aria-label="취소"><span
+                                class="blind">취소</span></span>
+                      </span>
+                            </div>
+                        </div>
+
+                        <div class="filter_area">
+                            <div class="dropdown_wrap">
+                                <button type="button" class="btn dropdown_toggle" aria-label="필터">
+                                    <span class="blind">필터</span>
+                                </button>
+
+                                <div class="dropdown_menu">
+                                    <ul class="dropdown_list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="meta_list_head"></ul>
+
+                    <div class="scroll_box">
+                        <ul class="meta_list_body"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn_wrap">
+        <ul>
+            <li>
+                <button type="button" class="btn b_t dull btn_close" aria-label="취소">
+                    <span>닫기</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(".popup--container .btn_close").on("click", (event) => {
+
+        $(".popup--container > div").removeClass("popup--open");
+        $(".popup--container").removeClass("active");
+
+    });
+</script>
