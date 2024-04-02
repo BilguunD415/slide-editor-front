@@ -10,7 +10,10 @@ $(function () {
   $("div.page_frame")[activeFrameIndex].setAttribute("active_frame", true)
   var avFrame = $(".page_frame[active_frame]");
 
+
+
   $(".header .toolbar button").on("click", (e) => {
+
     var target = e.currentTarget;
     $(".toolbar button").removeClass("on");
     $(".toolbar .dropdown_menu").removeClass("show");

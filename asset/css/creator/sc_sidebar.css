@@ -882,6 +882,38 @@
   margin-top: 10px;
 }
 
+.panel_subtree .mb5 {
+  margin-bottom: 5px;
+}
+
+.panel_subtree .mb10 {
+  margin-bottom: 10px;
+}
+
+.panel_subtree .mr5 {
+  margin-right: 5px;
+}
+
+.panel_subtree .mr10 {
+  margin-right: 10px;
+}
+
+.panel_subtree .ml5 {
+  margin-left: 5px;
+}
+
+.panel_subtree .ml10 {
+  margin-left: 10px;
+}
+
+.panel_subtree .mt5 {
+  margin-top: 5px;
+}
+
+.panel_subtree .mt10 {
+  margin-top: 10px;
+}
+
 .panel_subtree .mt18 {
   margin-top: 18px;
 }
@@ -1020,7 +1052,7 @@ i.svg_font_lineheight {
 
 .panel_subtree .example_list .example_detele {
   position: absolute;
-  left: 0;
+  left: -5px;
   top: 4px;
 }
 
@@ -1088,7 +1120,7 @@ i.svg_font_lineheight {
   right: 8px;
 }
 
-.panel_subtree .example_list.active .example_subtree {
+.panel_subtree .example_list.active > .example_subtree {
   display: block;
 }
 

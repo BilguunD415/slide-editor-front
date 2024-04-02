@@ -386,7 +386,7 @@
 
 /* template */
 .panel_subtree.type_template .example_list .example_subtree_open {
-  width: 100%;
+  width: 195px;
   padding-left: 14px;
   font-size: 13px;
   text-align: left;
@@ -445,10 +445,10 @@
   padding: 0 24px 1px 14px;
 }
 
-.panel_subtree.type_template .example_list .example_subtree {
-  padding-left: 0;
-  border-bottom: none;
-}
+/*.panel_subtree.type_template .example_list .example_subtree {*/
+/*  padding-left: 0;*/
+/*  border-bottom: none;*/
+/*}*/
 
 .panel_subtree.type_template .items {
   cursor: pointer;
@@ -660,7 +660,7 @@
 }
 
 .pop_template .inflex .txt {
-  width: 86px; 
+  width: 86px;
   line-height: 34px;
 }
 
