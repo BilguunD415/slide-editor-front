@@ -1,0 +1,82 @@
+<div class="title">
+  <h2>음성</h2>
+
+  <div class="btn_wrap">
+    <button type="button" class="btn properties_close" aria-label="속성 닫기">
+      <svg class="svg_properties_close" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L1 13" stroke="#979797" stroke-width="2"></path>
+        <path d="M9 1L15 7L9 13" stroke="#979797" stroke-width="2"></path>
+      </svg>
+      <span class="blind">속성 닫기</span>
+    </button>
+  </div>
+</div>
+
+<div class="inner scroll_box">
+  <!-- // 속성 - 연결 -->
+  <div class="panel active">
+    <div class="panel_title">
+      <h3>연결</h3>
+      <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+        <i class="arrow_down"></i><span class="blind">속성 열기</span>
+      </span>
+    </div>
+
+    <div class="panel_setting">
+      <div class="panel_subtree">
+        <div class="row">
+          <span class="word">File<span class="wcln">:</span></span>
+          <div class="input_box method_cloud mw190">
+            <input type="text" name="fileChooserName" class="scw90" placeholder="" disabled readonly>
+            <input type="file" name="fileChooser" class="hide">
+            <span role="button" class="btn find_more" aria-label="찾아보기" onclick="onChangeAudio()">
+              <i class="svg_find_more"></i>
+              <span class="blind">찾아보기</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- // 속성 - 위치 -->
+  <div class="panel active">
+    <div class="panel_title">
+      <h3>위치</h3>
+      <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+        <i class="arrow_down"></i><span class="blind">속성 열기</span>
+      </span>
+    </div>
+
+    <div class="panel_setting">
+      <div class="panel_subtree">
+        <div class="row ctrl_size">
+          <div class="col">
+            <span class="word">Left<span class="wcln">:</span></span>
+            <input type="number" name="left" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+          <div class="col">
+            <span class="word">Top<span class="wcln">:</span></span>
+            <input type="number" name="top" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+            <span class="unit">px</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn_wrap top">
+  <button type="button" class="btn" aria-label="완료">
+    <svg class="svg_properties_done" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M10.566 9.435a.8.8 0 0 0-1.131 1.13L14.869 16l-5.434 5.434a.8.8 0 0 0 1.13 1.132L16 17.132l5.434 5.434a.8.8 0 0 0 1.132-1.131L17.132 16l5.434-5.434a.8.8 0 0 0-1.131-1.131L16 14.869l-5.434-5.434Z"
+        fill="#979797" />
+    </svg>
+
+    <span class="blind">완료</span>
+  </button>
+</div>
+
+<script type="text/javascript" src="./layout/sidebar/sidebarAudio.js"></script>

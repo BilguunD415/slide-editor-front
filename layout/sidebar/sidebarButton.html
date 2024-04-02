@@ -1,0 +1,585 @@
+<div class="title">
+    <h2>버튼</h2>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn properties_close" aria-label="속성 닫기">
+            <svg class="svg_properties_close" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="#979797" stroke-width="2"></path>
+                <path d="M9 1L15 7L9 13" stroke="#979797" stroke-width="2"></path>
+            </svg>
+            <span class="blind">유형</span>
+        </button>
+    </div>
+</div>
+
+<div class="inner scroll_box">
+    <!-- // 속성 - 위치 -->
+    <div class="panel active">
+        <div class="panel_title">
+            <h3>유형</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree mt14">
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="buttonStyleType" value="default" class="blind" checked>
+                            <span class="rlabel">기본</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="buttonStyleType" value="image" class="blind">
+                            <span class="rlabel">이미지</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="panel_subtree">
+                <div class="row">
+                    <span class="word">File<span class="wcln">:</span></span>
+                    <div class="input_box method_cloud mw190">
+                        <input type="text" name='fileChooserName' class="scw90" placeholder="" disabled readonly>
+                        <input type="file" name="fileChooser" class="hide">
+                        <span role="button" class="btn find_more" aria-label="찾아보기" for="buttonStyleType" disabled
+                            onclick="onChoosedFile()">
+                            <i class="svg_find_more"></i>
+                            <span class="blind">찾아보기</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel active">
+        <div class="panel_title">
+            <h3>위치</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Left<span class="wcln">:</span></span>
+                        <input type="number" name="left" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Top<span class="wcln">:</span></span>
+                        <input type="number" name="top" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Width<span class="wcln">:</span></span>
+                        <input type="number" name="width" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Height<span class="wcln">:</span></span>
+                        <input type="number" name="height" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel active">
+        <div class="panel_title">
+            <h3>모양</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_setting">
+                <div class="panel_subtree">
+                    <h4>배경</h4>
+                    <div class="row">
+                        <span class="word">색상 채우기</span>
+                        <span class="select_color_picker" data="backgroundColor">
+                            <input type="text" id="shapeColor" class="blind"> <!-- active_color, fill="#70CCEB" -->
+                            <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                                xml:space="preserve">
+                                <path class="active_color"
+                                    d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                                    fill="#70CCEB" />
+                                <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel_subtree">
+                    <h4>선</h4>
+
+                    <div class="row jalign_s">
+                        <span class="word">굵기</span>
+                        <input type="number" name="borderWidth" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+
+                    <div class="row jalign_s">
+                        <span class="word">색상</span>
+                        <span class="select_color_picker" data="borderColor">
+                            <input type="text" id="backgroundColor" class="blind"> <!-- active_color, fill="#70CCEB" -->
+                            <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                                xml:space="preserve">
+                                <path class="active_color"
+                                    d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                                    fill="#70CCEB" />
+                                <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel_subtree">
+                    <h4>그림자</h4>
+
+                    <div class="row jalign_s">
+                        <span class="word">굵기</span>
+                        <input type="number" name="shadowWidth" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="row jalign_s">
+                        <span class="word">투명도</span>
+                        <input type="number" name="shadowTransparent" class="scw90 input_t" value="0">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+                <div class="panel_subtree dividing">
+                    <div class="row ctrl_round pl0">
+                        <span class="word mw54">라운드</span>
+                        <input type="number" name="borderRadius" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // 속성 - 텍스트 -->
+    <div class="panel">
+        <div class="panel_title">
+            <h3>텍스트</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree dividing">
+                <h4>배경</h4>
+                <div class="row">
+                    <div class="row">
+                        <div class="input_box mw226">
+                            <input type="text" name="buttonText" class="scw90 input_t" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel_subtree">
+                <h4>텍스트</h4>
+                <div class="row">
+                    <div class="font_select_box">
+                        <div class="select_wrap">
+                            <span class="select_toggle" selectedData="font">Noto Sans KR</span>
+                            <span class="select_list" popup="font">
+                                <span class="scroll_box">
+                                    <span class="items on" data="font">Noto Sans KR</span>
+                                    <span class="items" data="font">나눔 고딕</span>
+                                    <span class="items" data="font">나눔 명조</span>
+                                    <span class="items" data="font">나눔 스퀘어</span>
+                                    <span class="items" data="font">나눔 스퀘어 라운드</span>
+                                    <span class="items" data="font">나눔 손글씨</span>
+                                    <span class="items" data="font">빙그레체</span>
+                                    <span class="items" data="font">고도체</span>
+                                    <span class="items" data="font">배민의민족 주아</span>
+                                    <span class="items" data="font">배달의민족 도현</span>
+                                    <span class="items" data="font">Gmarket Sans</span>
+                                    <span class="items" data="font">Kopub Batng</span>
+                                    <span class="items" data="font">Kopub Dotum</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col flex mw104">
+                        <span class="word">
+                            <i class="svg_font_size"></i><span class="blind">크기</span>
+                        </span>
+
+                        <div class="font_select_box mw72">
+                            <div class="select_wrap">
+                                <span class="select_toggle" selectedData="size"><input name="fontSize" type="text"
+                                        class="scw90" value="24" /></span>
+                                <span class="select_list" popup="size">
+                                    <span class="scroll_box">
+                                        <span class="items" data="size">10</span>
+                                        <span class="items" data="size">11</span>
+                                        <span class="items" data="size">12</span>
+                                        <span class="items" data="size">13</span>
+                                        <span class="items" data="size">14</span>
+                                        <span class="items" data="size">15</span>
+                                        <span class="items" data="size">16</span>
+                                        <span class="items" data="size">20</span>
+                                        <span class="items on" data="size">24</span>
+                                        <span class="items" data="size">32</span>
+                                        <span class="items" data="size">36</span>
+                                        <span class="items" data="size">40</span>
+                                        <span class="items" data="size">48</span>
+                                        <span class="items" data="size">64</span>
+                                        <span class="items" data="size">96</span>
+                                        <span class="items" data="size">128</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col flex mw104">
+                        <span class="word">
+                            <i class="svg_font_lineheight"></i><span class="blind">행간</span>
+                        </span>
+
+                        <div class="font_select_box mw72">
+                            <div class="select_wrap">
+                                <span class="select_toggle" selectedData="line"><input name="lineHeight" type="text"
+                                        class="scw90" value="1.5" /></span>
+                                <span class="select_list" popup="line">
+                                    <span class="scroll_box">
+                                        <span class="items" data="line">1.0</span>
+                                        <span class="items" data="line">1.2</span>
+                                        <span class="items" data="line">1.3</span>
+                                        <span class="items" data="line">1.4</span>
+                                        <span class="items on">1.5</span>
+                                        <span class="items" data="line">1.6</span>
+                                        <span class="items" data="line">2.0</span>
+                                        <span class="items" data="line">2.5</span>
+                                        <span class="items" data="line">3.0</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="font_style_box">
+                        <span role="button" data="italic" class="btn font_style">
+                            <i class="svg_fontstyle_it"></i><span class="blind">이탤릭</span>
+                        </span>
+                        <span role="button" data="bold" class="btn font_style">
+                            <i class="svg_fontstyle_bo"></i><span class="blind">볼드</span>
+                        </span>
+                        <span role="button" data="underline" class="btn font_style">
+                            <i class="svg_fontstyle_un"></i><span class="blind">언더라인</span>
+                        </span>
+                    </div>
+
+                    <div class="font_color_box">
+                        <span class="select_color_picker" data="fontColor">
+                            <input type="text" class="blind"> <!-- active_color, fill="#70CCEB" -->
+                            <svg class="select_color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                                xml:space="preserve">
+                                <path class="active_color"
+                                    d="M12 8.5H1.5l5 5.5zm3 5c.8 0 1.5-.7 1.5-1.5S15 9.8 15 9.8s-1.5 1.4-1.5 2.2c0 .8.7 1.5 1.5 1.5zM.8 15.8h16.5v1.5H.8z"
+                                    fill="#70CCEB"></path>
+                                <path fill="none" stroke="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8.2H1.5m6-5.2L6 1.5M16.5 12c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S15 9.8 15 9.8s1.5 1.4 1.5 2.2zM6.8 2.2l5.1 5.2c.3.3.4.4.5.6v.5c-.1.2-.2.3-.5.6l-3.5 3.5c-.6.6-.9.9-1.2 1-.3.1-.6.1-.9 0-.3-.1-.6-.4-1.2-1L2.4 9.9c-.6-.6-.9-.9-1-1.2-.1-.3-.1-.6 0-.9.1-.3.4-.6 1-1.2l4.4-4.4z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="font_style_box">
+                        <span role="button" data="align" value="left" class="btn font_style on">
+                            <i class="svg_fontstyle_al_l"></i><span class="blind">왼쪽 정렬</span>
+                        </span>
+                        <span role="button" data="align" value="center" class="btn font_style">
+                            <i class="svg_fontstyle_al_c"></i><span class="blind">중앙 정렬</span>
+                        </span>
+                        <span role="button" data="align" value="right" class="btn font_style">
+                            <i class="svg_fontstyle_al_r"></i><span class="blind">오른쪽 정렬</span>
+                        </span>
+                        <span role="button" data="align" value="justify" class="btn font_style">
+                            <i class="svg_fontstyle_al_j"></i><span class="blind">양쪽 정렬</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // 속성 - 연결 -->
+    <div class="panel">
+        <div class="panel_title">
+            <h3>연결</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="actionType" value="download" class="blind" checked>
+                            <span class="rlabel">File<span class="wcln">:</span></span>
+                        </label>
+                    </div>
+                    <div class="input_box method_cloud mw190">
+                        <input type="text" name='fileDownloadName' class="scw90" placeholder="" disabled readonly>
+                        <input type="file" name="fileDownload" class="hide">
+                        <span role="button" class="btn find_more" aria-label="찾아보기" for="actionTypeDown"
+                            onclick="onDownloadFile()">
+                            <i class="svg_find_more"></i>
+                            <span class="blind">찾아보기</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="actionType" value="web" class="blind">
+                            <span class="rlabel">Web<span class="wcln">:</span></span>
+                        </label>
+                    </div>
+                    <div class="input_box method_cloud mw190">
+                        <input type="text" class="scw90 input_t" placeholder="" name="actionTypeWeb" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="actionType" value="page" class="blind">
+                            <span class="rlabel">슬라이드 이동<span class="wcln">:</span></span>
+                        </label>
+                    </div>
+
+                    <div class="input_box method_cloud mw190">
+                        <input type="number" class="scw90 input_t" name="actionTypePage" value="0" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="actionType" value="close" class="blind">
+                            <span class="rlabel">윈도우 닫기</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- // 속성 - 색상 -->
+    <div class="panel hide">
+        <div class="panel_title">
+            <h3>제공 방식</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="subtree_image_target_type" value="default" class="blind" checked>
+                            <span class="rlabel">풀 팝업</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="subtree_image_target_type" value="default" class="blind">
+                            <span class="rlabel">임베디드</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Left<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Top<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+                <div class="row ctrl_size ctrl_rate">
+                    <div class="col">
+                        <span class="word">Width<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Height<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0">
+                        <span class="unit">px</span>
+                    </div>
+
+                    <div class="btn_wrap rate">
+                        <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+                            <svg class="svg_restrict" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                                    stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                <path
+                                    d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                                    stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                            </svg>
+                            <span class="blind">비율 유지</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel hide">
+        <div class="panel_title">
+            <h3>제공 방식</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="subtree_audio_target_type" value="default" class="blind" checked>
+                            <span class="rlabel">재생/정지 토글</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="subtree_audio_target_type" value="default" class="blind">
+                            <span class="rlabel">플레이어 토글(임베디드)</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Left<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Top<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+                <div class="row ctrl_size ctrl_rate">
+                    <div class="col">
+                        <span class="word">Width<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Height<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" onkeyup="onResize($(this))">
+                        <span class="unit">px</span>
+                    </div>
+
+                    <div class="btn_wrap rate">
+                        <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+                            <svg class="svg_restrict" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                                    stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                <path
+                                    d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                                    stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                            </svg>
+                            <span class="blind">비율 유지</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel hide">
+        <div class="panel_title">
+            <h3>제공 방식</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row">
+                    <div class="radio_wrap">
+                        <label class="radio_label">
+                            <input type="radio" name="subtree_video_target_type" value="default" class="blind" checked>
+                            <span class="rlabel">풀 팝업</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spectrum_box has_alpha">
+        <input id="spectrumColor" class="blind">
+
+        <div class="color_picker_wrap">
+            <button type="button" class="btn color_picker" aria-label="속성 닫기">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve">
+                    <path
+                        d="M6 19.5c-.3 0-.7-.1-1-.3-.3-.2-.5-.5-.6-.9v-.2l.4-2.9L12 8.1l-.7-.7 1.1-1.1 5.1 5.1-1.1 1.1-.5-.5-7.1 7.1-2.6.3c-.1.1-.1.1-.2.1zm.4-3.5-.3 1.9 2-.3 6.7-6.7-1.7-1.7L6.4 16z"
+                        fill="#d8d8d8" />
+                    <path d="m18.4 4.4 1.2 1.2c.7.7.7 2 0 2.7l-1.4 1.4-3.9-3.9 1.4-1.4c.8-.7 2-.7 2.7 0z"
+                        fill-rule="evenodd" clip-rule="evenodd" fill="#d8d8d8" />
+                </svg>
+                <span class="blind">스포이드</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .spectrum_box {
+        top: 100px;
+        position: fixed;
+        right: 270px;
+        display: none;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="/asset/css/lib/spectrum.css">
+<script type="text/javascript" src="/asset/js/spectrum.js"></script>
+<script type="text/javascript" src="./layout/sidebar/sidebarButton.js"></script>

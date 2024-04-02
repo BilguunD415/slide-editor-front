@@ -1,0 +1,601 @@
+<div class="title">
+    <h2>드래그앤드롭</h2>
+
+    <div class="btn_wrap">
+        <button type="button" class="btn properties_close" aria-label="속성 닫기">
+            <svg class="svg_properties_close" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L1 13" stroke="#979797" stroke-width="2"></path>
+                <path d="M9 1L15 7L9 13" stroke="#979797" stroke-width="2"></path>
+            </svg>
+            <span class="blind">속성 닫기</span>
+        </button>
+    </div>
+</div>
+
+<div class="inner scroll_box">
+    <div class="panel">
+        <div class="panel_title">
+            <h3>정답 확인</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="정답 확인">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Left<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" name="left">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Top<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" name="top">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+                <div class="row ctrl_size">
+                    <span class="check_wrap">
+                        <label class="check_label">
+                            <input type="checkbox" class="blind">
+                            <span class="clabel">버튼 숨기기</span>
+                        </label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel_title">
+            <h3>다시 풀기</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="다시 풀기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+        <div class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row ctrl_size">
+                    <div class="col">
+                        <span class="word">Left<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" name="left">
+                        <span class="unit">px</span>
+                    </div>
+                    <div class="col">
+                        <span class="word">Top<span class="wcln">:</span></span>
+                        <input type="number" class="scw90 input_t" value="0" name="top">
+                        <span class="unit">px</span>
+                    </div>
+                </div>
+                <div class="row ctrl_size">
+                    <span class="check_wrap">
+                        <label class="check_label">
+                            <input type="checkbox" class="blind">
+                            <span class="clabel">버튼 숨기기</span>
+                        </label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel_title">
+            <h3>드래그 객체</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="드래그 객체">
+                <i class="arrow_down"></i><span class="blind">드래그 객체</span>
+            </span>
+        </div>
+        <div class="inner panel_setting scroll_box" style="max-height: 500px;">
+            <div class="panel_subtree dividing">
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">1.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>객체 1</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row">
+                            <span class="word">File<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw170">
+                                <input type="text" class="scw90" placeholder="" disabled readonly>
+                                <span role="button" class="btn find_more" aria-label="찾아보기">
+                                  <i class="svg_find_more"></i>
+                                  <span class="blind">찾아보기</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+
+                        <div class="row ctrl_size ctrl_rate">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input type="number" name="width" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input type="number" name="height" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+
+                            <div class="btn_wrap rate">
+                                <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+                                    <svg class="svg_restrict" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                        <path
+                                                d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                    </svg>
+                                    <span class="blind">비율 유지</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">2.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>객체 2</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row">
+                            <span class="word">File<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw170">
+                                <input type="text" class="scw90" placeholder="" disabled readonly>
+                                <span role="button" class="btn find_more" aria-label="찾아보기">
+                                  <i class="svg_find_more"></i>
+                                  <span class="blind">찾아보기</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+
+                        <div class="row ctrl_size ctrl_rate">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input type="number" name="width" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input type="number" name="height" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+
+                            <div class="btn_wrap rate">
+                                <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+                                    <svg class="svg_restrict" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                        <path
+                                                d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                    </svg>
+                                    <span class="blind">비율 유지</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">3.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>객체 3</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row">
+                            <span class="word">File<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw170">
+                                <input type="text" class="scw90" placeholder="" disabled readonly>
+                                <span role="button" class="btn find_more" aria-label="찾아보기">
+                                  <i class="svg_find_more"></i>
+                                  <span class="blind">찾아보기</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+
+                        <div class="row ctrl_size ctrl_rate">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input type="number" name="width" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input type="number" name="height" class="scw90 input_t" value="0" >
+                                <span class="unit">px</span>
+                            </div>
+
+                            <div class="btn_wrap rate">
+                                <button type="button" class="btn restrict_rate on" aria-label="비율 유지">
+                                    <svg class="svg_restrict" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M7.31758 8.99997C7.31758 10.6447 8.6509 11.978 10.2956 11.978L11.1465 11.978L13.2737 11.978C14.9184 11.978 16.2517 10.6447 16.2517 9C16.2517 7.35527 14.9184 6.02196 13.2736 6.02195L12.8477 6.02195"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                        <path
+                                                d="M10.6824 9.00056C10.6824 7.35584 9.3491 6.02252 7.70438 6.02252L6.85351 6.02251L4.72635 6.02251C3.08162 6.0225 1.74831 7.35581 1.74832 9.00053C1.74832 10.6453 3.08164 11.9786 4.72636 11.9786L5.15231 11.9786"
+                                                stroke="#D8D8D8" stroke-width="1.425" stroke-linecap="round"></path>
+                                    </svg>
+                                    <span class="blind">비율 유지</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_insert">
+                    <button type="button" class="btn b_t w100" aria-label="추가">
+                        <span>추가</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel_title">
+            <h3>드롭 영역</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="드롭 영역">
+                <i class="arrow_down"></i><span class="blind">드롭 영역</span>
+            </span>
+        </div>
+        <div class="inner panel_setting scroll_box" style="max-height: 500px;">
+            <div class="panel_subtree  dividing">
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">1.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>영역 1</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input id="width" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input id="Height" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="word">드래그 객체<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw159">
+                              <span class="plural">
+                                  <span class="row plural_line">
+                                      <span class="select_wrap mw138">
+                                        <span class="select_toggle">-</span>
+                                        <span class="select_list">
+                                          <span class="scroll_box" popup="line">
+                                            <span class="items" data="1">1</span>
+                                            <span class="items" data="2">2</span>
+                                            <span class="items" data="3">3</span>
+                                            <span class="items" data="4">4</span>
+                                            <span class="items" data="5">5</span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                      <span role="button" class="btn plural_delete blind" aria-label="삭제"><span class="blind">삭제</span></span>
+                                      <span role="button" class="btn plural_insert" aria-label="추가"><span class="blind">추가</span></span>
+                                    </span>
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">2.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>영역 2</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input id="width" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input id="Height" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="word">드래그 객체<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw159">
+                              <span class="plural">
+                                  <span class="row plural_line">
+                                      <span class="select_wrap mw138">
+                                        <span class="select_toggle">-</span>
+                                        <span class="select_list">
+                                          <span class="scroll_box" popup="line">
+                                            <span class="items" data="1">1</span>
+                                            <span class="items" data="2">2</span>
+                                            <span class="items" data="3">3</span>
+                                            <span class="items" data="4">4</span>
+                                            <span class="items" data="5">5</span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                      <span role="button" class="btn plural_delete blind" aria-label="삭제"><span class="blind">삭제</span></span>
+                                      <span role="button" class="btn plural_insert" aria-label="추가"><span class="blind">추가</span></span>
+                                    </span>
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_list">
+                    <div class="row">
+                        <span class="num trans">3.</span>
+                        <span role="button" class="btn example_subtree_open">
+                            <i class="arrow_down"></i>
+                            <span>영역 3</span>
+                        </span>
+                    </div>
+
+                    <div class="example_subtree">
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Left<span class="wcln">:</span></span>
+                                <input id="left" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Top<span class="wcln">:</span></span>
+                                <input id="top" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row ctrl_size">
+                            <div class="col">
+                                <span class="word">Width<span class="wcln">:</span></span>
+                                <input id="width" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                            <div class="col">
+                                <span class="word">Height<span class="wcln">:</span></span>
+                                <input id="Height" autocomplete="off" type="number" class="scw90 input_t" value="0">
+                                <span class="unit">px</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="word">드래그 객체<span class="wcln">:</span></span>
+                            <div class="input_box method_cloud mw159">
+                              <span class="plural">
+                                  <span class="row plural_line">
+                                      <span class="select_wrap mw138">
+                                        <span class="select_toggle">-</span>
+                                        <span class="select_list">
+                                          <span class="scroll_box" popup="line">
+                                            <span class="items" data="1">1</span>
+                                            <span class="items" data="2">2</span>
+                                            <span class="items" data="3">3</span>
+                                            <span class="items" data="4">4</span>
+                                            <span class="items" data="5">5</span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                      <span role="button" class="btn plural_delete blind" aria-label="삭제"><span class="blind">삭제</span></span>
+                                      <span role="button" class="btn plural_insert" aria-label="추가"><span class="blind">추가</span></span>
+                                    </span>
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example_detele">
+                        <span role="button" class="btn remove delete_example" aria-label="삭제">
+                            <span class="blind">삭제</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="example_insert">
+                    <button type="button" class="btn b_t w100" aria-label="추가">
+                        <span>추가</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel_title">
+            <h3>채점</h3>
+            <span role="button" class="btn panel_setting_open" aria-label="속성 열기">
+                <i class="arrow_down"></i><span class="blind">속성 열기</span>
+            </span>
+        </div>
+
+        <div id="marking-setting" class="panel_setting">
+            <div class="panel_subtree">
+                <div class="row valign_t">
+                    <div class="col">
+                        <div class="radio_wrap column">
+                            <label class="radio_label">
+                                <input id="radio-hide" type="radio" name="subtree_marking" class="blind" checked="">
+                                <span class="rlabel">숨기기</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="radio_wrap column">
+                            <label class="radio_label">
+                                <input id="radio-show" type="radio" name="subtree_marking" class="blind">
+                                <span class="rlabel">보이기</span>
+                            </label>
+
+                            <div class="sub_attribute col_sub_pos">
+                                <div class="row ctrl_size">
+                                    <div class="col">
+                                        <span class="word">Left<span class="wcln">:</span></span>
+                                        <input id="left" autocomplete="off" type="number" class="scw90 input_t"
+                                               value="0">
+                                        <span class="unit">px</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="word">Top<span class="wcln">:</span></span>
+                                        <input id="top" autocomplete="off" type="number" class="scw90 input_t"
+                                               value="0">
+                                        <span class="unit">px</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spectrum_box has_alpha">
+        <input id="spectrumColor" class="blind">
+
+        <div class="color_picker_wrap">
+            <button type="button" class="btn color_picker" aria-label="속성 닫기">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve">
+                    <path
+                            d="M6 19.5c-.3 0-.7-.1-1-.3-.3-.2-.5-.5-.6-.9v-.2l.4-2.9L12 8.1l-.7-.7 1.1-1.1 5.1 5.1-1.1 1.1-.5-.5-7.1 7.1-2.6.3c-.1.1-.1.1-.2.1zm.4-3.5-.3 1.9 2-.3 6.7-6.7-1.7-1.7L6.4 16z"
+                            fill="#d8d8d8" />
+                    <path d="m18.4 4.4 1.2 1.2c.7.7.7 2 0 2.7l-1.4 1.4-3.9-3.9 1.4-1.4c.8-.7 2-.7 2.7 0z"
+                          fill-rule="evenodd" clip-rule="evenodd" fill="#d8d8d8" />
+                </svg>
+                <span class="blind">스포이드</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .spectrum_box {
+        top: 100px;
+        position: fixed;
+        right: 270px;
+        display: none;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="/asset/css/lib/spectrum.css">
+<script type="text/javascript" src="/asset/js/spectrum.js"></script>
+<script type="text/javascript" src="./layout/sidebar/dragDropQuiz.js"></script>
