@@ -1,15 +1,17 @@
 @charset "utf-8";
+
 /**
  * Selpub Creator - Base v1.0 : 2022-01-10
 */
 /* ------------------------------------------------------------------------------------------------------------- */
 /* body */
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
-body > div {
+body>div {
   width: 100%;
   height: 100%;
 }
@@ -94,15 +96,15 @@ body > div {
   align-items: center;
 }
 
-.btn_wrap ul li + li {
+.btn_wrap ul li+li {
   margin-left: 6px;
 }
 
-.btn_wrap > div {
+.btn_wrap>div {
   display: inline-flex;
 }
 
-.btn_wrap > div + div {
+.btn_wrap>div+div {
   margin-left: 6px;
 }
 
@@ -234,7 +236,7 @@ body > div {
   box-sizing: border-box;
 }
 
-.flex > * {
+.flex>* {
   box-sizing: border-box;
 }
 
@@ -282,10 +284,11 @@ body > div {
 /* ------------------------------------------------------------------------------------------------------------- */
 /* font */
 .bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
-.italic, i {
+.italic,
+i {
   font-style: italic;
 }
 

@@ -83,7 +83,7 @@
   border-right: 2px solid #434343;
 }
 .workspace_area .content_frame .buttonElement > *{
-  border: 1px solid #434343; 
+  border: 1px solid #434343;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
@@ -112,8 +112,8 @@
 }
 
 
-.workspace_area .content_frame .buttonElement, 
-.workspace_area .content_frame .textElement, 
+.workspace_area .content_frame .buttonElement,
+.workspace_area .content_frame .textElement,
 .workspace_area .content_frame .imageElement,
 .workspace_area .content_frame .videoElement,
 .workspace_area .content_frame .audioElement,
@@ -178,6 +178,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 15.72px;
+  width: 15.72px;
+
 }
 
 .quiz_area .multiple-select.ox-quiz .multiple-icon:before {
